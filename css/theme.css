@@ -1,0 +1,399 @@
+/*********************************************************
+**********************************************************
+
+	Folder:	Theme340
+	Name:	construction
+	Cat:	Industrial
+
+**********************************************************
+*********************************************************/
+
+
+body {
+	margin: 0px 0 20px 0;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.sf_outer_wrapper {
+	width: 735px;
+	margin: 0 auto;
+}
+
+.sf_extra1 {
+	position: relative;
+	height: 90px;
+	width: 735px;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.sf_extra1 span {
+	position: absolute;
+	width: 300px;
+	height: 71px;
+	background-repeat: no-repeat;
+}
+
+.sf_wrapper {
+	width: 735px;
+	margin: 0 auto;
+}
+
+/*--------------------------------
+		Top Navigation
+---------------------------------*/
+
+.sf_navigation_top {
+	width: 735px;
+	height: auto !important;
+	clear: both;
+	background-repeat: repeat;
+}
+
+.sf_navigation_top ul{
+	margin: 0;
+	padding: 0;
+	clear: both;
+	min-height: 1%;
+	height: auto !important;
+	height:1%;	
+}
+
+.sf_navigation_top ul:after{
+	content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 1px;
+    clear: both;
+}
+
+.sf_navigation_top ul li {
+	text-align: center;
+	float: left;
+	font-size: 10px;
+	list-style: none;
+
+	
+}
+
+.sf_navigation_top ul li.sf_last_nav_item{
+}
+
+.sf_navigation_top ul li.sf_first_nav_item{
+
+}
+
+.sf_navigation_top ul li a {
+	background-repeat: no-repeat;	
+	text-decoration: none;
+	overflow: hidden;
+	display: block;
+	font-weight: bold;
+	padding-top: 5px;
+	height: 19px;
+	width: 147px;
+}
+
+.sf_navigation_top ul li a:visited {
+	
+	
+}
+
+.sf_navigation_top ul li a:hover{
+	
+}
+.sf_subnavigation, .sf_subnavigation2 {
+	display:none;
+}
+/*------------------------------------
+	Dropdown
+------------------------------------*/
+#Nav1 iframe {
+	position: absolute;
+	/* account for the border */
+	left: -0.25em;
+	top: -0.25em;
+	z-index: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	margin-left: 3px;
+}
+#Nav1, 
+#Nav1 ul { /* all lists */
+	list-style:none;
+}
+
+#Nav1 a {
+	display:block;
+}
+
+#Nav1 li { /* all list items */
+	float:left;
+}
+
+#Nav1 li ul { /* second-level lists */
+	position:absolute;
+	left:-999em;
+	width:146px;
+	border:0;
+	height:auto;
+	margin:0 0 0 0;
+	padding:0px 1px 0 1px;
+	z-index:1000;
+}
+#Nav1 li ul li{
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	background:none;
+}
+#Nav1 li ul li a{
+	height:auto;
+	margin:0 0 1px 0;
+	width:136px;
+	padding:5px;
+	line-height:normal;
+	white-space:normal;
+	border:none;
+	background-image:none;
+}
+#Nav1 li:hover ul, 
+#Nav1 li.sfhover ul { /* lists nested under hovered list items */
+	left:auto;
+}
+/*--------------------------------
+		End Top Navigation
+---------------------------------*/
+
+
+
+.sf_extra10 {
+}
+
+
+
+/*--------------------------------
+		Header
+---------------------------------*/
+
+.sf_header_wrapper {
+	clear: both;
+	width: 735px;
+	height: 166px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.sf_extra2 {
+	height: 166px;
+	width: 325px;
+	float: left;
+}
+
+.sf_main_header {
+	width: 400px;
+	font-size: 26px;
+	font-weight: bold;	
+	overflow:hidden;
+	height: 40px;
+	margin: 0 5px 15px 10px;
+	padding-top: 20px;
+}
+
+.sf_extra3 {
+}
+
+.sf_sub_header {
+	margin: 0 5px 15px 10px;
+	width: 400px;
+	font-size: 18px;
+	overflow:hidden;
+	height: 45px;
+}
+
+.sf_main_header p, .sf_sub_header p{
+	margin:0;
+	padding:0;
+}
+
+/*--------------------------
+		End Header
+--------------------------*/
+
+
+
+.sf_extra4 {
+}
+
+
+
+/*--------------------------------
+		Bottom Navigation
+---------------------------------*/
+
+.sf_navigation {
+	display: none;
+}
+
+
+
+
+/*--------------------------------
+		End Bottom Navigation
+---------------------------------*/
+
+
+
+.sf_extra5 {
+}
+
+
+
+/*--------------------------------
+		 	Page Title
+---------------------------------*/
+
+.sf_pagetitle {
+	sf_edit: true;
+	font-size: 18px;
+	padding: 7px 7px 0 12px;
+	font-weight: bold;
+	clear: both;
+}
+
+/*--------------------------------
+		 End Page Title
+---------------------------------*/
+
+
+
+.sf_extra6 {
+}
+
+
+
+/*--------------------------------
+		 Sub Navigation
+---------------------------------*/
+
+
+
+/*--------------------------------
+		 End Sub Navigation
+---------------------------------*/
+
+.sf_extra11 {
+
+}
+	
+/*--------------------------
+		Content
+--------------------------*/
+
+.sf_content {
+	sf_edit: true;
+	width: 735px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 10px;
+}
+
+
+
+/*--------------------------
+		End Content
+--------------------------*/
+
+
+
+.sf_extra12 {
+	sf_edit: true;
+}
+
+
+
+/*--------------------------------
+		 Sub Navigation2
+---------------------------------*/
+
+
+
+/*--------------------------------
+		 End Sub Navigation2
+---------------------------------*/
+
+
+
+.sf_extra7 {
+	height: 18px;
+	width: 735px;
+	background-repeat:repeat-x;
+}
+
+.sf_extra7 span{
+	
+}
+
+
+
+/*--------------------------
+		 Footer
+--------------------------*/
+
+.sf_footer {
+	clear: both;
+	text-align: center;
+	font-size: 10px;
+	padding: 4px 0 5px;
+	color: #fff;
+}
+
+/*--------------------------
+		End Footer
+--------------------------*/
+
+
+.sf_extra8 {
+	
+}
+
+.sf_extra9 {
+	
+}
+
+
+/*--------------------------
+		Extra Stuff
+--------------------------*/
+
+
+a:link {
+	text-decoration: underline;
+}
+
+a:visited {
+	
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.sf_banner {
+	margin-top: 40px;
+	text-align: center;
+}
+
+/**
+ * Sticking flyout menu bug
+ *
+ * @bugfix
+ * @affected ie7
+ * @css-for ie7
+ * @valid yes
+ */
+#Nav1 li:hover, #Nav1 li.hover {  
+    position: static;  
+} 
