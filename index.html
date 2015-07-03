@@ -3,8 +3,16 @@
 <html>
 	<head>
 		<meta name="description" content="JaysPlumbing">
+	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- jQuery Map codex -->
+	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+   src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript"
+   src="//code.jquery.com/jquery-latest.min.js"></script>
 		<title>Jay's | Plumbing</title>
 	</head>
 	<header id="header">
@@ -13,9 +21,9 @@
         </div>
 	    <nav class="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="selected">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="selected">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +31,10 @@
         <p class="text_logo" alt"Jay's Plumbing">Jay's Plumbing</p>
     </break>
 	<body id="maincontent">
-	    <form action="contact.html" method="post">
+	    
+	    <!-- Contact Form -->
+	    
+	    <form id="contact_form" action="/" method="post">
             <h1>Contact a plumber!</h1>
             
             <!-- Section 1 of Form -->
@@ -44,7 +55,7 @@
                 
             <!-- Checkbox -->
             <br><span>
-                <label>Best time you can be reached:</label>
+                <label id="time_to_call">Best time you can be reached:</label>
                 
                 <input type="checkbox" id="morning" value="morning" name="follow_up_time"><label for="morning" class="morning" required="">9am-12pm</label><br>
                 <input type="checkbox" id="afternoon" value="afternoon" name="follow_up_time"><label for="afternoon" class="afternoon" required="">12pm-3pm</label><br>
@@ -103,6 +114,7 @@
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
+        <h2 id="map_Container"></h2>
         <h3 class="prompt">prompt service, morning noon or night!</h3>  
             <a id="open" href="images/24-hour.jpg">
             <img src="images/24-hour.jpg" alt=""></img>
@@ -136,7 +148,10 @@
 	    </div>
         <div class="job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
 	    </div>
-	    <!--<script type="text/javascript" src="java/welcome.js"></script>-->
+	    <div class="container">
+            <script type="text/javascript" src="javascript/widget.js"></script>
+            <script>$("#map").geoMap();</script>
+	    </div>
 	</body>
 	<br></br>
 	<footer>

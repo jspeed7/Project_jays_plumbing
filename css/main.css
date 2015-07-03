@@ -1,165 +1,211 @@
-/*
+/************************************************************
 
-Images
+Header
 
-*/ 
+*************************************************************/
 
-#open {
-  	float: right;
-  	margin: 0;
-  	max-width: 150px;
+.text_logo {
+    /*float: right;*/
+    /*margin: 0;*/
+    /*display : block;*/
+    /*height : 113px;*/
+    text-indent : -9999px; 
 }
 
-.logo1 {
-	float: left;
-  	margin: 0 0;
-  	width: auto;
-  	max-width: 150px;
-} 
-
-#logo {
-	float: center;
-	margin: 0;
-	width: 75px;
+#header {
+    /*float: left;*/
+    width: 100%;
+    background: #FFF;
+    border-bottom: 1px #DDD;
 }
 
-img {
-	width: 100%;
+.img-wrap {
+    width: 100%;
 }
 
-
-
-header {
-  background-color: white;
-  color: blue;
-  list-style-position: inherit;
-  text-align: center;
+.reponsive {
+    max-width: 25%;
+    height: auto;
+    image-orientation: auto;
 }
 
-#maincontent {
-  background-color: gray;
+ 
+header, p {
+    clear: both;
 }
 
+/************************************************************
 
 
-a {
-  text-decoration: none;
-  position: center;
-}
 
-nav {
-  background-color: inherit;
-  padding: 10px 0;
-  margin: 20px 0 0; 
-}
-
-nav li {
-  	display: inline-block;
- 	background-color: lightblue;
-}
+*************************************************************/
 
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: center;
-}
-
-body {
-	background: blue;
-	color: white;
-} 
-.samedayservice {
-	background: black;
-	color: white;
-	padding-bottom: 5px;
-	margin: 5px;
-}
-
-#wrapper, #sub_header {
-	text-align: center;	
-	background: black;
-	color: white;
-}
 
 
-#service-list {
-	float: left;
-  	width: 45%;
-  	margin: 0;
-  	padding: 0;
-  	border-style: solid;
-    border-width: 2px;
-    clear: none;
-	background: black;
-	color: white;
+
+
+
+
+
+
+
+
+/************************************************************
+
+Navagation 
+
+*************************************************************/
+
+.nav {
+	position: relative;
+	margin: 20px 0;
 	
 }
-
-#service-list2 {
-	float: right;
-	width: 45%;
+.nav ul {
 	margin: 0;
 	padding: 0;
-    border-style: solid;
-    border-width: 2px;
-    clear: none;
-	background: black;
-	color: white;
-	
 }
+.nav li {
+	/*margin: 0 5px 10px 0;*/
+	padding: 1em;
+	list-style: inline;
+	background: #000;
+	text-align: center;
 
-.job { 
-  color: blue; 
-  clear: both;
-  text-align: center;
-} 
-
-link {
-  color: white;
 }
-
-hover {
-  color: white;
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #FFF;
+	line-height: 100%;
 }
-
-h2, h3 { 
-  color: black; 
+.nav a:hover {
+	color: #BBB;
 }
-
-/*
-
-footer
-
-*/
-footer {
-	background: white;
-	font-size: 0.75em;
-  	text-align: center;
-  	clear: both;
-  	padding-top: 50px 0 50px;
-  	margin: 50px 0  0;
-  	color: #ccc;
-}
-
-#logo {
-  	width: 120px;
-  	height: 120px;
-  	margin: 0 5px;
+.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 5px;
 }
 
 
-/*
-Font styling
-*/
 
-body {
-	margin: 0px 0 20px 0;
-	font-family: Arial, Verdana, Helvetica, sans-serif;
-	font-size: 24px;
+/************************************************************
+
+Body
+
+*************************************************************/
+
+
+
+/************************************************************
+
+Contact a Plumber Form
+
+*************************************************************/
+
+#contact_form {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    
 }
 
-footer {
-	font-size: 12px;
+#contact_form input[type="text"],
+#contact_form input[type="email"],
+#contact_form input[type="tel"],
+#contact_form input[type="number"],
+#contact_form textarea {
+    width:90%;
+    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
 }
+
+/*#time_to_call,*/
+/*#morning,*/
+/*#afternoon,*/
+/*#evening {*/
+/*    display: inline;    */
+
+}
+
+#contact_form button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    float: inherit;
+    border:none;
+    background:#000;
+    background-image: linear-gradient(bottom, #999 0%, #ddd 52%);
+    background-image:-moz-linear-gradient(bottom, #999 0%, #ddd 52%);
+    background-image:-webkit-linear-gradient(bottom, #999 0%, #ddd 52%);
+    color:#000;
+    font-weight: bold;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+}
+
+
+
+
+/************************************************************
+
+Media Query : Repsonsive Web
+
+*************************************************************/
+
+@media screen and (min-width: 1025px){
+    img.responsive {width: 375px;}
+}
+
+@media screen and (min-width: 801px){
+    img.responsive {
+        width: 350px;
+        float: left;      
+        /*width: 35%;*/
+    }
+     ul {
+	    float: right;
+	    height: 20%;
+        padding: 8px 0px;
+        margin: 0px 0px;
+        width: 50%;
+    }
+	    
+	.nav li {    
+	    display: inline;
+	    /*padding: 0px;*/
+	    /*margin: 0;*/
+    }
+}
+
+@media screen and (max-width: 800px) {
+    img.responsive {width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav a{
+        display: block;
+        padding: 20px;
+        margin: 0;
+        
+    }
+    .nav li {
+	    margin: 0 5px 10px 0;
+	    padding: 0;
+	    background: #000;
+	    /*text-align: center;*/
+    }
+
+    .text_logo {display: none;}
+}
+
+img.responsive {height: auto;}
