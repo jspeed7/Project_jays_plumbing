@@ -69,27 +69,39 @@ Navagation
 .nav li {
 	/*margin: 0 5px 10px 0;*/
 	padding: 1em;
-	list-style: inline;
-	background: #000;
+	border: 5px;
+	list-style: box;
 	text-align: center;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
 
 }
 .nav a {
 	padding: 3px 12px;
 	text-decoration: none;
 	color: #FFF;
-	line-height: 100%;
+	background: #000;
+	line-height: 90%;
 }
 .nav a:hover {
-	color: #BBB;
-}
-.nav .current a {
-	background: #999;
-	color: #fff;
-	border-radius: 5px;
+	color: #000;
+	background-color: #FFF;
+	font-weight: bold;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+
 }
 
-
+.nav .selected{
+	color: #000;
+	background-color: #FFF;
+	font-weight: bold;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
 
 /************************************************************
 
@@ -181,14 +193,21 @@ Media Query : Repsonsive Web
 	    
 	.nav li {    
 	    display: inline;
-	    /*padding: 0px;*/
+	    margin: 0 5px 10px 0;
+	    padding: 0px;
 	    /*margin: 0;*/
+    }
+    
+    .nav a {
+        display: block;
+        padding: 0;
+        /*width: 100%;*/
+        margin: 0;
     }
 }
 
 @media screen and (max-width: 800px) {
     img.responsive {width: 300px;
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }
@@ -201,11 +220,11 @@ Media Query : Repsonsive Web
     .nav li {
 	    margin: 0 5px 10px 0;
 	    padding: 0;
-	    background: #000;
-	    /*text-align: center;*/
     }
-
+    
     .text_logo {display: none;}
 }
 
-img.responsive {height: auto;}
+img.responsive {height: auto;
+    width: auto;
+}

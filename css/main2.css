@@ -1,0 +1,132 @@
+/************************************************************
+
+
+*************************************************************/
+img.responsive {
+    height: auto;
+    width: auto;
+}
+
+#header {
+        width: 100%;
+        background: #FFF;
+}
+
+.title-area {
+    background: #FFF;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo {
+    display: inherit;
+    width: 21%;
+}
+
+.text_logo {
+    clear: both;
+}
+
+/************************************************************
+
+Navigation begin:
+
+*************************************************************/
+ 
+ .tabs .tab-title a {
+    font-weight: bold;
+ }
+ 
+ 
+ .tabs .tab-title > a {
+     background: #000;
+     text-align: center;
+     color: #FFF;
+ }
+
+.nav a:hover {
+	color: #000;
+	background-color: #FFF;
+	/*font-weight: bold;*/
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.nav .active {
+    background: #000;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.left_nav a {
+    padding: 0;
+    width: 100%;
+}
+
+nav .top-bar .nav_bar {
+    background: #FFF;
+    display: inline;
+}
+
+
+
+/************************************************************
+
+Navigation end:
+
+*************************************************************/
+
+
+/************************************************************
+
+
+*************************************************************/
+
+
+/************************************************************
+
+Media Query : Repsonsive Web
+
+*************************************************************/
+
+
+
+
+@media screen and (min-width: 641px) {
+    .tabs {
+        display: none;
+    }
+
+    .top-bar {
+        display: inline;
+    }    
+    
+    .img-wrapper {
+        width: 100%;
+    }
+
+    img.responsive {
+        display: none;
+    }
+    
+
+    
+    
+}
+
+@media only screen and (max-width: 40em) /* 0, 640px */ {
+
+    .top-bar, .nav_bar {
+        display: none;
+        background: #FFF;
+    }
+    
+    img.responsive {
+        width: auto;
+        height: auto;
+        float: inherit;
+        padding: 0;
+        margin: 0;
+    }
+}

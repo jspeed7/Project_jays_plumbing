@@ -3,29 +3,68 @@
 <html>
 	<head>
 		<meta name="description" content="JaysPlumbing">
-	    <!--<link rel="stylesheet" href="css/normalize.css">-->
-	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/foundation.css">
+	    <link rel="stylesheet" href="css/main2.css">
+	    <script src="js/vendor/modernizr.js"></script>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
 	    <!-- jQuery Map codex -->
-	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript"
-   src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript"
-   src="//code.jquery.com/jquery-latest.min.js"></script>
+	  <!--  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+   <!--     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+   <!--     <script type="text/javascript"-->
+   <!--src="//maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+   <!--     <script type="text/javascript"-->
+   <!--src="//code.jquery.com/jquery-latest.min.js"></script>-->
 		<title>Jay's | Plumbing</title>
 	</head>
 	<header id="header">
+        <div>
+            <div class="fixed">
+                <nav class="top-bar nav_bar" data-topbar role="navigation" data-options="sticky_on: medium,large">
+                  <ul class="title-area">
+                    <li class="Jays_plumbing">
+                      <h1 class="img-wrapper"></h1>
+                    </li>
+                     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                  </ul>
+                
+                  <section class="top-bar-section">
+                     <!--Right Nav Section -->
+                    <ul class="right">
+                      <li class="active"><a href="#">24/hour Emergency contact!</a></li>
+                      <li class="has-dropdown">
+                        <a href="#">Home</a>
+                        <ul class="dropdown">
+                          <li><a href="#">About Jay's Plumbing</a></li>
+                          <li class="active"><a href="#">Who's in the field now!!</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                     <!--Left Nav Section -->
+                    <ul class="left left_nav">
+                      <li><a href="#">
+                        <img  class="logo" href="images/3logo.png" src="images/3logo.png" alt="Jay's Plumbing logo"> 
+                        </a></li>
+                    </ul>
+                  </section>
+                </nav>
+            </div>
+            <div>
+                
+            </div>
+        </div>
         <div class="img-wrap">
             <img class="responsive" href="images/3logo.png" src="images/3logo.png" alt="Jay's Plumbing logo"> 
         </div>
-	    <nav class="nav">
-            <ul>
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+
+        <ul class="tabs vertical" data-tab>
+            <li class="tab-title active"><a href="index2.html">Home</a></li>
+            <li class="tab-title "><a href="about.html">About</a></li>
+            <li class="tab-title "><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
     <break>
         <p class="text_logo" alt="Jay's Plumbing">Jay's Plumbing</p>
@@ -148,10 +187,18 @@
 	    </div>
         <div class="job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
 	    </div>
-	    <div class="container">
+	    <div class="container"></div>
+	    
+	    <!-- foundation js -->
+	    
+	          <script src="js/vendor/jquery.js"></script>
+              <script src="js/foundation.min.js"></script>
+                <script>
+                    $(document).foundation();
+                </script>
             <script type="text/javascript" src="javascript/widget.js"></script>
             <script>$("#map").geoMap();</script>
-	    </div>
+	    
 	</body>
 	<br></br>
 	<footer>
