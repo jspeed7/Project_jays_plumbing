@@ -18,32 +18,56 @@
 		<title>Jay's | Plumbing</title>
 	</head>
 
-    <header id="header">
-        <div class="nav_container container">
+    <header class="row span1" id="header">
+        
+        <div class="nav_container container-fluid">
         
         <!--<div class="img-wrap container">-->
-            <img class="img-responsive img_responsive img-rounded" href="images/3logo.png" src="images/3logo.png" alt="Responsive image"> 
+            <img class="img-responsive img_responsive img-rounded col-sm-3 " href="images/3logo.png" src="images/3logo.png" alt="Responsive image"> 
         <!--</div>-->
         	<nav class="nav">
-                <ul class="nav_bar">
-                    <button  type="button" class="emergency_button btn btn-default btn-lg btn-lg">Emergency service!
-        	        </button>
-                        <li><a href="index3.html" class="selected">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <button  type="button" class="col-sm-4 emergency_button btn btn-default btn-md hidden-xs">Emergency service!
+                </button>
+                
+        	    <div class="nav-collapse">
+
+                    
+                    <!--<a class="brand" href="#">Jay's Plumbing</a>-->
+
+        <!-- Everything you want hidden at 940px or less, place within here -->
+                    <div class="nav-collapse">
+                        <ul class="nav_bar nav visible-xs">
+                        <!--<a class="btn btn-navbar hidden-xs caret" data-toggle="collapse" data-target=".nav-collapse">-->
+                        <!--    <span class="icon-bar">Menu</span>-->
+                        <!--</a>-->
+                            <li class="active"><a href="index3.html" class="selected">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+        <!-- Dropdown -->
+                        <li class="dropdown hidden-xs col-sm-offset-1">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-right drpdwn_nav">
+                                <li class=""><a href="index3.html" class="selected">Home</a></li>
+                                <li class="sightings"><a href="contact.html">Plumber Sightings</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <break>
-        <p class="text_logo" alt="Jay's Plumbing">Jay's Plumbing</p>
+        <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
     </break>
     <div class="container-fluid">
-    	<body id="maincontent">
+    	<body id="row span2 maincontent">
     	    
     	    <!-- Contact Form -->
     	    
-    	    <form id="contact_form" action="/" method="post">
+    	    <form id="contact_form" class="col-md-4 form" action="/" method="post">
                 <h1>Contact a plumber!</h1>
                 
                 <!-- Section 1 of Form -->
@@ -123,13 +147,13 @@
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
-            <h2 id="map_Container"></h2>
-            <h3 class="prompt">prompt service, morning noon or night!</h3>  
-                <a id="open" href="images/24-hour.jpg">
-                <img src="images/24-hour.jpg" alt=""></img>
+            <h2 id="col-md-4 map_Container"></h2>
+            <h3 class="col-md-4 prompt">prompt service, morning noon or night!</h3>  
+                <a id="leak" class="col-md-6"  href="images/overflow.jpg">
+                <img src="images/overflow.jpg" alt="overflow water damaged picture"></img>
                 </a>
                 <div></div>
-                <section>
+                <section class="span3 col-md-6">
                 <ul id=gallery>
                 </ul>
             	<div Class="samedayservice">Same day or next day service!
@@ -138,7 +162,7 @@
                 </section> 
             <!--<div id="wrapper">-->
             <!--</div>-->
-            <div id="sub_header"> </div>
+            <div id="sub_header" class="col-md-4"> </div>
             <div> Residential and Commercial <br> Services include:</br>
         	    <li id="service-list">
                 <ul>Faucet repair</ul>
@@ -148,14 +172,14 @@
                 <ul>Water line repairs</ul>
                 <ul>Garbage disposals</ul></li>
     	    </div>
-    	    <div> <li id="service-list2">
+    	    <div class="col-md-4"> <li id="service-list2">
     			<ul>Kitchen faucets and sinks</ul>
     			<ul>Toilets rebuilt or replacement</ul>
     			<ul>Sewers installed new or repairs</ul>
     			<ul>Pedestal sinks and Vanity sink repairs or replacement</ul>	
     			<ul>Complete gas service, even adding a new service from your street</ul></li>
     	    </div>
-            <div class="job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
+            <div class="span4 col-md-12 job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
     	    </div>
     	    
     	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
