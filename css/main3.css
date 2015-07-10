@@ -56,7 +56,18 @@ Body
 
 body { 
     padding-top: 30px;
+    max-width: 1025px;
+    width: 100%;
 }
+
+.nav_container {
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
+
+
 
 
 /************************************************************
@@ -154,8 +165,10 @@ Buttons
 }
 
 
-menu li a {
-    padding-top: 20px;
+.dropdown-menu-right {
+  right: -149px;
+  top: 30px;
+  left: auto;
 }
 
 .nav .nav-collapse {
@@ -166,8 +179,8 @@ menu li a {
 }
 
 .dropdown-menu {
-    position: absolute;
-    float: none;
+    font-size: 16px;
+    color: #FFF;
 }
 
 
