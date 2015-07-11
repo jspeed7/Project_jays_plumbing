@@ -68,6 +68,19 @@ body {
 }
 
 
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
 
 
 /************************************************************
@@ -153,6 +166,7 @@ Buttons
     background: #E60000;
     color: #000;
     font: bold;
+    border-radius: 6px;
 }
 
 .emergency_button:hover {
@@ -208,6 +222,16 @@ Contact Form:
 
 
 
+
+/************************************************************
+
+Footer
+
+*************************************************************/
+
+footer {
+    clear: both;
+}
 
 
 
