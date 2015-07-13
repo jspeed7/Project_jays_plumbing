@@ -29,12 +29,6 @@ img {
     width: 100%;
 }
 
-footer .copyright-logo {
-    max-width: 150px;
-    width: 100%;
-}
-
-
 .img_responsive {
     width: auto;
     max-width: 250px;
@@ -75,17 +69,6 @@ body {
 html, body {
     height: 100%;
 }
-
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
-}
-
 
 /************************************************************
 
@@ -215,7 +198,7 @@ form .btn_info {
 }
 
 .drpdwn .drpNav {
-    background-color: rgba(0,0,0 .5);
+    /*background-color: rgba(0,0,0 .5);*/
     color: #FFFFFF;
 }
 
@@ -254,6 +237,11 @@ footer {
     padding: 0 10px;
 }
 
+footer .copyright-logo {
+    min-width: 75px;
+    max-width: 150px;
+    width: 100%;
+}
 
 /************************************************************
 
