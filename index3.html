@@ -8,6 +8,9 @@
 	    
 	    <link rel="stylesheet" href="css/main3.css">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="format-detection" content="telephone=no">
+	    
+	    
 	    <!-- jQuery Map codex -->
 	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -15,37 +18,34 @@
    src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript"
    src="//code.jquery.com/jquery-latest.min.js"></script>
+   
 		<title>Jay's | Plumbing</title>
+		
 	</head>
     
     <header class="row" id="header">
         <div class="nav_container container-fluid text-center">
         
-            <!--<div class="img-wrap container">-->
             <img class="img-responsive img_responsive img-rounded" href="images/3logo.png" src="images/3logo.png" alt="Responsive image"> 
-            <!--</div>-->
+            
         	<nav class="nav">
-                <button  type="button" class="col-sm-offset-pull-3 col-md-3 emergency_button btn btn-default btn-md">Emergency service!
-                </button>
+                <a href="tel:+1-502-449-0492" class="col-sm-offset-pull-3 col-md-3 emergency_button" role="button">Emergency service! <br>502-449-0492</a>
         	    <div class="nav-collapse">
                 <!--<a class="brand" href="#">Jay's Plumbing</a>-->
                     <div class="nav-collapse">
                         <ul class="nav_bar nav visible-xs">
-                        <!--<a class="btn btn-navbar hidden-xs caret" data-toggle="collapse" data-target=".nav-collapse">-->
-                        <!--    <span class="icon-bar">Menu</span>-->
-                        <!--</a>-->
                             <li class="active"><a href="index3.html" class="selected">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about" class="">About</a></li>
+                            <li><a href="#contact" class="">Contact</a></li>
                         </ul>
 <!-- Dropdown -->
                         <li class="dropdown hidden-xs col-sm-offset-push-2 col-md-offset-2">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
-                            <ul class="dropdown-menu dropdown-menu-right drpdwn_nav">
-                                <li class=""><a href="index3.html" class="selected">Home</a></li>
-                                <li class="sightings"><a href="contact.html">Plumber Sightings</a></li>
-                                <li><a href="#About">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                            <ul class="dropdown-menu dropdown-menu-right drpdwn">
+                                <li class=""><a href="index3.html" class="selected drpdwn_nav">Home</a></li>
+                                <li class="drpdwn_nav sightings"><a href="contact.html">Plumber Sightings</a></li>
+                                <li><a class="drpdwn_nav" href="#About">About</a></li>
+                                <li><a class="drpdwn_nav" href="#contact">Contact</a></li>
                             </ul>
                         </li>
                     </div>
@@ -59,6 +59,8 @@
 
     	<body id="maincontent" class="">
 <!-- Contact Form -->
+        	
+        	
         	    
                     <div class="">
                         <form id="contact_form" class="" action="/" method="post" role="form">
@@ -73,8 +75,8 @@
                                 <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
                             <label class="" for="Address">Address:</label>
                                 <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
-                            <label class="" for="zipcode">Zipcode:</label>
-                                <input class="form-control" type="" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
+                            <label class="" for="zipcode">Zip code:</label>
+                                <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
                             <label class="" for="mail">Email:</label>
                                 <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
     <!-- Checkbox -->
@@ -89,10 +91,8 @@
                                     
                                     <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
                                     <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
-                                    
-                                    
-    <!-- Radio button -->
                             </span></br>
+    <!-- Radio button -->
                             <br><span>
                                 <label class="radio">Customer Type:</label>
                                     
@@ -180,10 +180,45 @@
 	
 	<!--</br>-->
 	<footer class="footer">
-        <div class="container">
-    	    <div style="display:block"> <p class="text-muted"> Content copyright 
-    	    <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script> Jay's	Plumbing. ALL rights reserved.</p>
-    	    </div>			
+        
+
+        
+        
+        <!-- START COPYRIGHT SECTION -->   	
+       <div class="copyright aligncenter">
+     <div class="container clearfix">
+        <div class="sixteen columns">   
+        <div class="copyright-logo">
+           						<a href="">
+                         <img src="" 
+                              alt=""
+                          />
+                       </a>
+					        </div>   
+           <div class="social-icons">
+
+    <div class="social-icon social-email"><a href="#" title="Email">Email</a></div>
+    <div class="social-icon social-facebook"><a href="#" target="_blank" title="Facebook">Facebook</a></div>
+    
+    
+  
+
+
+
         </div>
+        <div class="container">
+			<p>
+			     <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script> Jay's Plumbing. ALL rights reserved.
+    	     Jay's Plumbing. ALL RIGHTS RESERVED.  | Office : 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
+    	    </p>
+            </div>
+         </div> <!-- END SIXTEEN COLUMNS -->        
+	  </div><!-- END CONTAINER -->
+     </div>
+     <!-- END COPYRIGHT SECTION -->	 
+
+        
+        
+        
     </footer>
 </html>

@@ -106,8 +106,8 @@ ul.nav_bar {
 	padding: 2px 0;
     border-radius: 10px;
 }
+
 .nav li {
-	/*margin: 0 5px 10px 0;*/
 	padding: 1em;
 	border: 5px;
 	list-style: none;
@@ -118,15 +118,14 @@ ul.nav_bar {
     box-shadow:         inset 0 0 10px #000000;
 
 }
+
 .nav a {
-	/*padding: 3px 12px;*/
 	padding: 0;
 	text-decoration: none;
 	font: bold;
 	color: #FFF;
 	background: #000;
     border-radius: 6px;
-	/*line-height: 100%;*/
 }
 
 .nav a:hover {
@@ -150,6 +149,11 @@ ul.nav_bar {
     box-shadow:         inset 0 0 5px #000000;
 }
 
+/*.drpdwn_nav {*/
+/*    background: #000000;*/
+/*    color: #FEFEFE;*/
+/*}*/
+
 
 /************************************************************
 
@@ -162,14 +166,15 @@ Buttons
 }
 
 
-.emergency_button {
+.nav .emergency_button {
     background: #E60000;
     color: #000;
     font: bold;
+    
     border-radius: 6px;
 }
 
-.emergency_button:hover {
+.nav .emergency_button:hover {
     color: red;	
     background-color: #FFF;
 	/*font-weight: bold;*/
@@ -188,7 +193,7 @@ Buttons
 .nav .nav-collapse {
     padding-top: 6px;
 }
-.nav .drpdwn_nav {
+.nav .drpdwn {
     padding: 15px 15px;
 }
 
@@ -281,8 +286,14 @@ Media Query : Repsonsive Web
         .nav li a {
             padding: 10px 16px;
             margin: auto;
-            display: inline;
         }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
+        }
+
     }
 
         /* Extra Small Devices, Phones */ 
@@ -309,7 +320,12 @@ Media Query : Repsonsive Web
         .nav li a {
             padding: 10px 16px;
             margin: auto;
-            display: inline;
+        }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
         }
 
         
@@ -337,11 +353,17 @@ Media Query : Repsonsive Web
     	    padding: 0;
         }
         
-        .nav li a {
+        .nav li a {    
             padding: 10px 16px;
             margin: auto;
-            display: inline;
         }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
+        }
+        
     }
 
 
@@ -354,22 +376,22 @@ Media Query : Repsonsive Web
         	padding: 20px 20px;
         	float: none;
         }
-        .nav a {
-            display: block;
-            padding: 35px 20px;
-            margin: 0;
-            
-        }
-        
+
         .nav ul {
-            padding: 15px 0;
+            padding: 15px 0 0;
         }
         
         .nav li {
     	    margin: 0 5px 10px 0;
     	    padding: 0;
         }
-        
+
+        .nav a {
+            display: block;
+            padding: 20px 20px;
+            margin: 0;
+            
+        }        
         .nav a:hover {
             font-weight: bold;
         }
