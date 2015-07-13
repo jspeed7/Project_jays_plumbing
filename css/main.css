@@ -1,54 +1,90 @@
+/***** Classes ****/
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+
+
+
 /************************************************************
 
 Header
 
 *************************************************************/
-
-.text_logo {
-    /*float: right;*/
-    /*margin: 0;*/
-    /*display : block;*/
-    /*height : 113px;*/
-    text-indent : -9999px; 
+img {
+    width: 100%;
 }
 
-#header {
-    /*float: left;*/
+footer .copyright-logo {
+    max-width: 150px;
     width: 100%;
-    background: #FFF;
-    border-bottom: 1px #DDD;
+}
+
+
+.img_responsive {
+    width: auto;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-wrap {
-    width: 100%;
+    float: left;
+    clear: none;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
-.reponsive {
-    max-width: 25%;
-    height: auto;
-    image-orientation: auto;
-}
-
- 
-header, p {
-    clear: both;
-}
 
 /************************************************************
 
-
+Body
 
 *************************************************************/
 
+body { 
+    padding-top: 30px;
+    max-width: 1025px;
+    width: 100%;
+}
+
+.nav_container {
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
 
 
+html, body {
+    height: 100%;
+}
 
-
-
-
-
-
-
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
 
 
 /************************************************************
@@ -59,112 +95,160 @@ Navagation
 
 .nav {
 	position: relative;
-	margin: 20px 0;
-	
+	padding: 20px 0;
+	margin: 0;
+	text-decoration: none;	
 }
+
+ul.nav_bar {
+    padding: 0;
+    margin: 0;
+}
+
 .nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 2px 0;
+    border-radius: 10px;
 }
+
 .nav li {
-	/*margin: 0 5px 10px 0;*/
 	padding: 1em;
 	border: 5px;
-	list-style: box;
+	list-style: none;
+	border-radius: 6px;
 	text-align: center;
 	-moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
 
 }
+
 .nav a {
-	padding: 3px 12px;
+	padding: 0;
 	text-decoration: none;
+	font: bold;
 	color: #FFF;
 	background: #000;
-	line-height: 90%;
+    border-radius: 6px;
 }
+
 .nav a:hover {
 	color: #000;
 	background-color: #FFF;
-	font-weight: bold;
+    border-radius: 6px;
 	-moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
 
 }
+
 
 .nav .selected{
 	color: #000;
 	background-color: #FFF;
 	font-weight: bold;
-	-moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
+	border-radius: 6px;
+	-moz-box-shadow:    inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow:         inset 0 0 5px #000000;
 }
 
-/************************************************************
-
-Body
-
-*************************************************************/
-
+/*.drpdwn_nav {*/
+/*    background: #000000;*/
+/*    color: #FEFEFE;*/
+/*}*/
 
 
 /************************************************************
 
-Contact a Plumber Form
+Buttons 
 
 *************************************************************/
+.btn {
+    padding: 10px 12px;
+    font-size: 16px;
+}
 
-#contact_form {
-    box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
+form .btn_info {
+    box-shadow: -5px 5px 15px #888888;
+}
+
+.nav .emergency_button {
+    background: #E60000;
+    color: #000;
+    font: bold;
     
+    border-radius: 6px;
 }
 
-#contact_form input[type="text"],
-#contact_form input[type="email"],
-#contact_form input[type="tel"],
-#contact_form input[type="number"],
-#contact_form textarea {
-    width:90%;
-    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-    -webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-    -moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    border-radius:5px;
-}
-
-/*#time_to_call,*/
-/*#morning,*/
-/*#afternoon,*/
-/*#evening {*/
-/*    display: inline;    */
-
-}
-
-#contact_form button[type="submit"] {
-    cursor:pointer;
-    width:100%;
-    float: inherit;
-    border:none;
-    background:#000;
-    background-image: linear-gradient(bottom, #999 0%, #ddd 52%);
-    background-image:-moz-linear-gradient(bottom, #999 0%, #ddd 52%);
-    background-image:-webkit-linear-gradient(bottom, #999 0%, #ddd 52%);
-    color:#000;
-    font-weight: bold;
-    margin:0 0 5px;
-    padding:10px;
-    border-radius:5px;
+.nav .emergency_button:hover {
+    color: red;	
+    background-color: #FFF;
+	/*font-weight: bold;*/
+	-moz-box-shadow:    inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow:         inset 0 0 15px #000000;
 }
 
 
+.dropdown-menu-right {
+  right: -149px;
+  top: 30px;
+  left: auto;
+}
+
+.nav .nav-collapse {
+    padding-top: 6px;
+}
+.nav .drpdwn {
+    padding: 15px 15px;
+}
+
+.dropdown-menu {
+    font-size: 16px;
+    color: #FFF;
+}
+
+
+.open .dropdown-menu {
+    display: inline-flex;
+}
+
+
+/************************************************************
+
+Body:
+
+*************************************************************/
+
+body {
+    font-size: 16px;
+}
+
+
+/************************************************************
+
+Contact Form: 
+
+*************************************************************/
+
+
+
+
+/************************************************************
+
+Footer
+
+*************************************************************/
+
+footer {
+    clear: both;
+}
+
+.social-icon a {
+    display: inline-block;
+    padding: 0 10px;
+}
 
 
 /************************************************************
@@ -173,58 +257,176 @@ Media Query : Repsonsive Web
 
 *************************************************************/
 
-@media screen and (min-width: 1025px){
-    img.responsive {width: 375px;}
-}
 
-@media screen and (min-width: 801px){
-    img.responsive {
-        width: 350px;
-        float: left;      
-        /*width: 35%;*/
-    }
-     ul {
-	    float: right;
-	    height: 20%;
-        padding: 8px 0px;
-        margin: 0px 0px;
-        width: 50%;
-    }
-	    
-	.nav li {    
-	    display: inline;
-	    margin: 0 5px 10px 0;
-	    padding: 0px;
-	    /*margin: 0;*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
     }
     
-    .nav a {
-        display: block;
-        padding: 0;
-        /*width: 100%;*/
-        margin: 0;
-    }
-}
+        /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
 
-@media screen and (max-width: 800px) {
-    img.responsive {width: 300px;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .nav a{
-        display: block;
-        padding: 20px;
-        margin: 0;
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        
+        .img_responsive {
+            float: left;
+            
+        }
+         .nav_bar {
+            float: right;
+            clear: none;
+            padding: 10px 0px;
+            margin: 0 50px 0 0;
+    	    background: #FFFFFF;
+        }
+        
+        .nav_bar a {
+            display: inline;
+        }
+    	    
+    	.nav li {    
+    	    display: inline;
+    	    margin: 0 5px 0px 5px;
+    	    padding: 0;
+        }
+        
+        .nav li a {
+            padding: 10px 16px;
+            margin: auto;
+        }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
+        }
+
+    }
+
+        /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width: 651px) and (max-width: 767px) {
+ 
+         #header img {
+            float: left;
+        }
+        
+        ul .nav_bar {
+            float: right;
+            clear: right;
+            padding: inherit;
+            margin: 0;
+    	    background: #FFFFFF;
+        }
+    	    
+    	.nav li {    
+    	    display: inline;
+    	    margin: 0 5px;
+    	    padding: 0;
+        }
+        
+        .nav li a {
+            display: inline;
+            
+        }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
+        }
+
         
     }
-    .nav li {
-	    margin: 0 5px 10px 0;
-	    padding: 0;
+    
+        @media only screen and (min-width: 561px) and (max-width: 650px) {
+ 
+         #header img {
+            float: left;
+        }
+        
+        ul .nav_bar {
+            float: right;
+            clear: right;
+            padding: inherit;
+            margin: 0;
+    	    background: #000000;
+        }
+    	    
+        
+
+    	.nav li {    
+    	    display: inline;
+    	    margin: 0 5px;
+    	    padding: 0;
+        }
+        
+        .nav li a {    
+            display: inline;
+            /*padding: 10px 16px;*/
+            /*margin: auto;*/
+        }
+        
+        .nav .emergency_button {
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 0;
+        }
+        
+    }
+
+
+    /* Custom, iPhone Retina */ 
+
+    @media only screen and (max-width : 560px ) {
+        
+        .nav {    
+            position: inherit;
+        	padding: 20px 20px;
+        	float: none;
+        }
+
+        .nav ul {
+            padding: 15px 0 0;
+        }
+        
+        .nav li {
+    	    margin: 0 5px 10px 0;
+    	    padding: 0;
+        }
+
+        .nav a {
+            display: block;
+            padding: 20px 20px;
+            margin: 0;
+            
+        }        
+        .nav a:hover {
+            font-weight: bold;
+        }
+        
+        /*.emergency_button {*/
+        /*    display: none;*/
+        /*}*/
+        
     }
     
-    .text_logo {display: none;}
+    
+    /*****************************/
+    
+.img_responsive {
+        height: auto;
+        width: auto;
+}    
+    
+.text_logo {
+    display: none;
+    
 }
 
-img.responsive {height: auto;
-    width: auto;
-}
+
+
+
