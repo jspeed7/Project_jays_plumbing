@@ -202,15 +202,7 @@ body {
     width: 100%;
 }
 
-.contactH2 {
-    padding: 0 0 10px;
-    border-bottom: solid #888888;
-    margin: 0 0 5px;
-}
 
-.jpInfoMedia a {
-    display: inline;
-}
 
 .nav_container {
     width: 100%;
@@ -222,6 +214,48 @@ body {
 .heading_24_7 img {
     max-width: 100px;
 }
+
+
+#contactDivider {
+    border-top: solid 10px;
+    border-bottom: solid 10px;
+    /*opacity: .10;*/
+}
+
+
+/************************************************************
+
+Map: 
+
+*************************************************************/
+
+/* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/************************************************************
+
+Contact Form: 
+
+*************************************************************/
 
 #SRF     {
     display: inline-block;
@@ -253,62 +287,21 @@ body {
     padding-top: 5px;
 }
 
-#contactDivider {
-    border-radius: 10px;
-    /*opacity: .10;*/
-}
-
-
-/************************************************************
-
-Map: 
-
-*************************************************************/
-/* Flexible iFrame */
-
-.Flexible-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.Flexible-container iframe,   
-.Flexible-container object,  
-.Flexible-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-#map-style {
-    border: solid;
-    padding: 15px;
-        
-}
-
-
-
-
-
-/************************************************************
-
-Contact Form: 
-
-*************************************************************/
-
-#SRF {
-    
-}
-
 .popover-content {
     background-color: rgba(255, 151, 0, 0.8);
     
 }
+
+.contactH2 {
+    padding: 0 0 10px;
+    border-bottom: solid #888888;
+    margin: 0 0 5px;
+}
+
+.jpInfoMedia a {
+    display: inline;
+}
+
 
 
 /************************************************************
