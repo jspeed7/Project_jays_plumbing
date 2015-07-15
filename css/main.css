@@ -25,9 +25,12 @@
 Header
 
 *************************************************************/
-img {
-    width: 100%;
+
+header {
+    border-bottom: 15px;
+    background: #FFFFFF;
 }
+
 
 .img_responsive {
     width: auto;
@@ -46,29 +49,6 @@ img {
 }
 
 
-/************************************************************
-
-Body
-
-*************************************************************/
-
-body { 
-    padding-top: 30px;
-    max-width: 1025px;
-    width: 100%;
-}
-
-.nav_container {
-    width: 100%;
-}
-.container {
-    width: 100%;
-}
-
-
-html, body {
-    height: 100%;
-}
 
 /************************************************************
 
@@ -194,13 +174,15 @@ form .btn_info {
 
 
 .open .dropdown-menu {
-    display: inline-flex;
+    /*display: inline-flex;*/
+    display: -webkit-inline-flex;
+    margin-top: 20px;
 }
 
 .drpdwn .drpNav {
-    /*background-color: rgba(0,0,0 .5);*/
     color: #FFFFFF;
 }
+
 
 /************************************************************
 
@@ -208,8 +190,23 @@ Body:
 
 *************************************************************/
 
-body {
+
+body { 
+    padding-top: 30px;
+    max-width: 1025px;
     font-size: 16px;
+    width: 100%;
+}
+
+.nav_container {
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
+
+.heading_24_7 img {
+    max-width: 100px;
 }
 
 
@@ -281,9 +278,11 @@ Media Query : Repsonsive Web
         }
     	    
     	.nav li {    
-    	    display: inline;
     	    margin: 0 5px 0px 5px;
     	    padding: 0;
+    	    -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;   
         }
         
         .nav li a {
@@ -315,7 +314,6 @@ Media Query : Repsonsive Web
         }
     	    
     	.nav li {    
-    	    display: inline;
     	    margin: 0 5px;
     	    padding: 0;
         }
@@ -358,8 +356,6 @@ Media Query : Repsonsive Web
         
         .nav li a {    
             display: inline;
-            /*padding: 10px 16px;*/
-            /*margin: auto;*/
         }
         
         .nav .emergency_button {
@@ -399,11 +395,7 @@ Media Query : Repsonsive Web
         .nav a:hover {
             font-weight: bold;
         }
-        
-        /*.emergency_button {*/
-        /*    display: none;*/
-        /*}*/
-        
+
     }
     
     
