@@ -255,12 +255,6 @@ Media Query : Repsonsive Web
     
         /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-        
         .img_responsive {
             float: left;
             
@@ -296,25 +290,32 @@ Media Query : Repsonsive Web
             margin: 0;
         }
 
+    
     }
 
+    /* Small Devices, Tablets */
+    /*@media only screen and (min-width : 768px) {*/
+        
+    /*}*/
+
         /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width: 651px) and (max-width: 767px) {
+    @media only screen and (min-width: 651px) and (max-width: 991px) {
  
          #header img {
             float: left;
         }
         
         ul .nav_bar {
-            float: right;
-            clear: right;
+            /*float: right;*/
+            /*clear: right;*/
             padding: inherit;
             margin: 0;
     	    background: #FFFFFF;
         }
     	    
     	.nav li {    
-    	    margin: 0 5px;
+    	    display: inline;
+    	    /*margin: 0 5px;*/
     	    padding: 0;
         }
         
@@ -350,7 +351,7 @@ Media Query : Repsonsive Web
 
     	.nav li {    
     	    display: inline;
-    	    margin: 0 5px;
+    	    /*margin: 0 5px;*/
     	    padding: 0;
         }
         
