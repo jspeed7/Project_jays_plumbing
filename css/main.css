@@ -202,6 +202,16 @@ body {
     width: 100%;
 }
 
+.contactH2 {
+    padding: 0 0 10px;
+    border-bottom: solid #888888;
+    margin: 0 0 5px;
+}
+
+.jpInfoMedia a {
+    display: inline;
+}
+
 .nav_container {
     width: 100%;
 }
@@ -235,8 +245,8 @@ body {
 .srf-box {
     border-left: solid #FF6500;
     border-right: solid #FF6500;
-    /*border-color: #FF6500;*/
     border-radius: 6px;
+    margin-top: 25px;
 }
 
 .SRF_arrow {
@@ -248,16 +258,35 @@ body {
     /*opacity: .10;*/
 }
 
+
 /************************************************************
 
 Map: 
 
 *************************************************************/
+/* Flexible iFrame */
 
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 #map-style {
-    border: 10px solid auto;
+    border: solid;
     padding: 15px;
         
 }
@@ -368,6 +397,10 @@ Media Query : Repsonsive Web
             float: left;
         }
         
+        .jpContactInfo {
+            padding: 30px;
+        }
+        
         ul .nav_bar {
             /*float: right;*/
             /*clear: right;*/
@@ -402,6 +435,10 @@ Media Query : Repsonsive Web
             float: left;
         }
         
+        .jpContactInfo {
+            padding: 30px;
+        }
+        
         ul .nav_bar {
             float: right;
             clear: right;
@@ -409,9 +446,7 @@ Media Query : Repsonsive Web
             margin: 0;
     	    background: #000000;
         }
-    	    
         
-
     	.nav li {    
     	    display: inline;
     	    /*margin: 0 5px;*/
@@ -434,6 +469,10 @@ Media Query : Repsonsive Web
     /* Custom, iPhone Retina */ 
 
     @media only screen and (max-width : 560px ) {
+        
+        .jpContactInfo {
+            padding: 30px;
+        }
         
         .nav {    
             position: inherit;
