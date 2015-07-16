@@ -81,98 +81,102 @@
                             
     <!-- Contact Form -->
             	
-            	
-            	    
-                    <div class="row">
-                        <form id="contact_form" class="form pull-right col-xs-8 col-sm-4 col-md-4" style="background-color: rgba(0, 0, 0, 0.30);" action="/" method="post" role="form">
-                            
-    <!-- Section 1 of Form -->
+<!-- Pop-Out Contact Form -->
+                    <div class="srf-box text-center pull-right col-xs-12 col-md-3">
+                      <h3 class="">Scheldule A Technician Now!</h3>
+                      <ul class="list-unstyled">
+                        <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
+                        <div id="popover-content" class="hide">
+                          <form class="form"  role="form">        
+        <!-- Section 1 of Form -->
                             <fieldset class="form-group">
-                                <legend class="text-center"><span class="number">1.</span> Contact Information</legend>
-                                <label class="" for="name">Full Name:</label>
-                                    <input class="form-control" type="text" id="name" name="user_name" placeholder="First &amp Last Name" required="" > 
-                                <label class="" for="phone">Phone:</label>
-                                    <input class="form-control" type="tel" id="phone" name="user_phone" placeholder="Contact Number" required="">
-                                <label class="" for="Address">Address:</label>
-                                    <input class="form-control" type="text" id="address" name="user_address" placeholder="Address" required="">
-                                <label class="" for="zipcode">Zip code:</label>
-                                    <input class="form-control" type="number" id="zipcode" name="user_zipcode" placeholder="Zip code" required="">
-                                <label class="" for="mail">Email:</label>
-                                    <input class="form-control" type="email" id="mail" name="user_email" placeholder="Email Address" required="">
-        <!-- Checkbox -->
-                                <br><span class="form-group ">
-                                        <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
-                                        
-                                        <label for="morning" class="morning checkbox-inline" required="">9am-12pm</label>
-                                        <input class="" type="checkbox" id="morning" value="morning" name="follow_up_time">
-                                        
-                                        <label for="afternoon" class="afternoon checkbox-inline" required="">12pm-3pm</label>
-                                        <input class="" type="checkbox" id="afternoon" value="afternoon" name="follow_up_time">
-                                        
-                                        <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
-                                        <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
-                                </span></br>
-        <!-- Radio button -->
-                                <br><span>
-                                    <label class="radio">Customer Type:</label>
-                                        
-                                        <label for="residential" class="customer_type" required="">Residential</label>
-                                        <input type="radio" id="residential" value="residential" name="customer_type">
-                                        
-                                        <label for="commercial" class="customer_type" required="">Commercial</label>
-                                        <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
-                                        
-                                </span></br>
-                            </fieldset>
-    <!-- Section 2 of Form -->
-                            <fieldset class="form-group">
-                                <legend class="text-center"><span class="number">2.</span> Brief Discription</legend>
-                                    <label for="problem">Tells Us About It:</label>
-                                    <br>
-                                        <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" placeholder="Discribe the situation here:" required=""></textarea>
-                                    </br>
-        <!--/*Select menu*/-->
-                                <span><br>
-                                    <label class="" for="problem">I Have A: </label>
-                                    <select class="form-control" id="job" name="user_job" required="">
-                                        <optgroup label="I need help with..">
-                                            <option value="blank"></option>
-                                            <option value="clogged">Backed-up/clogged</option>
-                                            <option value="broken">Broken</option>
-                                            <option value="general_install">Install</option>
-                                            <option value="leaky">Leaky</option>
-                                            <option value="new_install">New</option>
-                                            <option value="unknown">Not sure what's wrong</option>
-                                            <option value="other">Other</option>
-                                            <option value="service_inquire">Question about</option>
-                                            <option value="repair">Repair</option>
-                                        </optgroup>
-                                    </select>
-                                    <br>
-                                    <label class="" for="service">With: </label>
-                                    <select class="form-control" id="service" name="services" required="">
-                                        <optgroup label="Services">
-                                            <option value="blank"></option>
-                                            <option value="sewer_servicing">Sewer</option>
-                                            <option value="sink_service">Sink</option>
-                                            <option value="shower_hub_service">Shower/hub</option>
-                                            <option value="broken_pipe_service">Broken pipe</option>
-                                            <option value="sump_pump_service">Sump pump</option>
-                                            <option value="faucet_fixture_service">Faucet/fixture</option>
-                                            <option value="toilet_service">Toilet</option>
-                                            <option value="disposal_service">Disposal</option>
-                                            <option value="water_heater_service">Water heater</option>
-                                            <option value="remodeling_service">Remodeling</option>
-                                            <option value="other_services">Other (explain in notes)</option>
-                                        </optgroup>
-                                    </select>
-                                    </br>
-                                </br></span>
-                                <button class="btn btn-primary btn_info" type="submit">Submit</button>
-                                <br></br>
-                            </fieldset>
-    <!--/*End Form*/-->
-                        </form>
+                                <legend class="text-center"><span class="number">1.</span> Contact Information
+                                </legend>
+                                    <label class="" for="name">Name:</label>
+                                        <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
+                                    <label class="" for="phone">Phone:</label>
+                                        <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
+                                    <label class="" for="Address">Address:</label>
+                                        <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
+                                    <label class="" for="zipcode">Zip code:</label>
+                                        <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
+                                    <label class="" for="mail">Email:</label>
+                                        <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
+                <!-- Checkbox -->
+                                    <br><span class="form-group ">
+                                            <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
+                                            
+                                            <label for="morning" class="morning checkbox-inline" required="">9am-12pm</label>
+                                                <input class="" type="checkbox" id="morning" value="morning" name="follow_up_time">
+                                            
+                                            <label for="afternoon" class="afternoon checkbox-inline" required="">12pm-3pm</label>
+                                                <input class="" type="checkbox" id="afternoon" value="afternoon" name="follow_up_time">
+                                                
+                                            <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
+                                                <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
+                                    </span></br>
+                <!-- Radio button -->
+                                    <br><span>
+                                        <label class="radio">Customer Type:</label>
+                                            
+                                            <label for="residential" class="customer_type" required="">Residential</label>
+                                                <input type="radio" id="residential" value="residential" name="customer_type">
+                                                
+                                            <label for="commercial" class="customer_type" required="">Commercial</label>
+                                                <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
+                                                
+                                    </span></br>
+                                </fieldset>
+                <!-- Section 2 of Form -->
+                                <fieldset class="form-group">
+                                    <legend class="text-center"><span class="hd-primary number">2.</span> Brief Discription</legend>
+                                        <label>Tells Us About It:</label>
+                                        <br>
+                                            <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
+                                        </br>
+                <!--/*Select menu*/-->
+                                        <span><br>
+                                            <label class="" for="problem">I Have A: </label>
+                                            <select class="form-control" id="job" name="user_job" required="">
+                                                <optgroup label="I need help with..">
+                                                    <option value="clogged">Backed-up/clogged</option>
+                                                    <option value="broken">Broken</option>
+                                                    <option value="general_install">Install</option>
+                                                    <option value="leaky">Leaky</option>
+                                                    <option value="new_install">New</option>
+                                                    <option value="unknown">Not sure what's wrong</option>
+                                                    <option value="other">Other</option>
+                                                    <option value="service_inquire">Question about</option>
+                                                    <option value="repair">Repair</option>
+                                                </optgroup>
+                                            </select>
+                                            <br>
+                                            <label class="" for="service">With: </label>
+                                            <select class="form-control" id="service" name="services" required="">
+                                                <optgroup label="Services">
+                                                    <option value="sewer_servicing">Sewer</option>
+                                                    <option value="sink_service">Sink</option>
+                                                    <option value="shower_hub_service">Shower/hub</option>
+                                                    <option value="broken_pipe_service">Broken pipe</option>
+                                                    <option value="sump_pump_service">Sump pump</option>
+                                                    <option value="faucet_fixture_service">Faucet/fixture</option>
+                                                    <option value="toilet_service">Toilet</option>
+                                                    <option value="disposal_service">Disposal</option>
+                                                    <option value="water_heater_service">Water heater</option>
+                                                    <option value="remodeling_service">Remodeling</option>
+                                                    <option value="other_services">Other (explain in notes)</option>
+                                                    <option value=""></option>
+                                                </optgroup>
+                                            </select>
+                                            </br>
+                                        </br></span>
+                                        <button class="btn btn-default pull-right btn_info" type="submit">Submit</button>
+                                        <br></br>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </ul>
+<!-- /* End of SRF */ -->
                     </div>
     <!--/* Begin Script Tags */-->            
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
