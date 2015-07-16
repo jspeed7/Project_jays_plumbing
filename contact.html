@@ -11,63 +11,57 @@
 	    <meta name="format-detection" content="telephone=no">
 	    
 	    
-	    <!-- jQuery Map codex -->
-	    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-        
-        <script type="text/javascript"
-   src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript"
-   src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- jQuery Map codex -->
+	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
    
 		<title>Jay's | Plumbing</title>
 		
 	</head>
-    
-    <header class="row" id="header">
-        <div class="nav_container container-fluid text-center">
-        
-            <img class="img-responsive img_responsive img-rounded" href="index.html" src="images/3logo.png" alt="Responsive image"> 
-            
-        	<nav class="nav">
-                <a href="tel:+1-502-449-0492" class="col-sm-push-2 col-md-3 emergency_button" role="button">24/7 Emergency service! <br>502-449-0492</a>
-        	    <div class="nav-collapse">
-                <!--<a class="brand" href="#">Jay's Plumbing</a>-->
-                    <div class="nav-collapse">
-                        <ul class="nav_bar nav col-sm-push-2 hidden-md hidden-lg">
-                            <li class=""><a href="index.html" class="">Home</a></li>
-                            <li class=""><a href="about.html" class="">About</a></li>
-                            <li class="active"><a href="contact.html" class="selected">Contact</a></li>
-                        </ul>
-<!-- Dropdown -->
-                        <li class="dropdown visible-md visible-lg col-sm-push-2 col-md-3">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
-                            
-                            <ul class="dropdown-menu dropdown-menu-right drpdwn">
-                                <li class=""><a href="index.html" class="drpNav">Home</a></li>
-                                <li class=""><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
-                                <li class=""><a href="about.html" class="drpNav" >About</a></li>
-                                <li class=""><a href="contact.html" class="selected">Contact</a></li>
+	<div id="fullPage" class="container">
+        <div class="row text-center">
+            <header id="header">
+                <img class="img-responsive img_responsive img-rounded" href="index.html" src="images/3logo.png" alt="Responsive image"> 
+                
+            	<nav class="nav">
+                    <a href="tel:+1-502-449-0492" class="col-sm-push-2 col-md-3 emergency_button" role="button">24/7 Emergency service! <br>502-449-0492</a>
+            	    <div class="nav-collapse">
+                    <!--<a class="brand" href="#">Jay's Plumbing</a>-->
+                        <div class="nav-collapse">
+                            <ul class="nav_bar nav col-sm-push-2 hidden-md hidden-lg">
+                                <li class="active"><a href="index.html" class="selected">Home</a></li>
+                                <li class=""><a href="about.html" class="">About</a></li>
+                                <li class=""><a href="contact.html" class="">Contact</a></li>
                             </ul>
-                        </li>
+    <!-- Dropdown -->
+                            <li class="dropdown visible-md visible-lg col-sm-push-2 col-md-3">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                                
+                                <ul class="dropdown-menu dropdown-menu-right drpdwn">
+                                    <li class=""><a href="index.html" class="selected">Home</a></li>
+                                    <li class=""><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                                    <li class=""><a href="about.html" class="drpNav" >About</a></li>
+                                    <li class=""><a href="contact.html" class="drpNav">Contact</a></li>
+                                </ul>
+                            </li>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
         </div>
-    </header>
-    <break>
-        <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
-    </break>
-    <div>
-    	<body id="maincontent" class="continer-fluid">
-    	    
+        <break>
+            <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
+        </break>
+        <div class="row">
+            <body id="maincontent" >	    
     	    
     	    
     	    
 <!-- /* Start of Map */ -->            
-            <div id="contactDivider" class="container">
-            	<div class="row-fluid">
+            <div id="contactDivider" class="row">
+            	<div class="">
             	    
 <!-- Pop-Out Contact Form -->
                     <div class="srf-box text-center pull-right col-xs-12 col-md-3">
@@ -205,35 +199,36 @@
 <!--/* Begin Script Tags */-->            
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     	    <script type="text/javascript" src="javascript/widget.js"></script>
-
-    	</body>
+    
+        	</body>
+        </div>
+    
+    <!--/* Begin Footer */-->    
+        <div id="divFooter" class="container clearfix">
+            <footer class="footer row">
+    <!--/* START COPYRIGHT SECTION */-->   	
+                <div class="copyright aligncenter">
+                    <div class="container-fluid clearfix">
+                        <div class="container-fluid col-xs-3 col-sm-12 text-center">
+                   		    <a href="index.html">
+                                <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
+        				</div> 
+                        <div class="social-icons text-center container-fluid">
+                            <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
+                            <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
+                            <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
+                        </div>
+                        <div class="container-fluid text-center">
+        			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
+        			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
+            	            </p>
+                        </div>
+        	        </div>
+        	        <!--/* END CONTAINER */-->
+                </div>
+    <!--/* END COPYRIGHT SECTION */-->	 
+            </footer>
+    	</div>
+    <!--/* End Footer */-->
     </div>
-
-<!--/* Begin Footer */-->    
-    <div id="divFooter" class="container clearfix">
-        <footer class="footer row">
-<!--/* START COPYRIGHT SECTION */-->   	
-            <div class="copyright aligncenter">
-                <div class="container-fluid clearfix">
-                    <div class="container-fluid col-xs-3 col-sm-12 text-center">
-               		    <a href="index.html">
-                            <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
-    				</div> 
-                    <div class="social-icons text-center container-fluid">
-                        <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
-                        <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
-                        <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
-                    </div>
-                    <div class="container-fluid text-center">
-    			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
-    			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
-        	            </p>
-                    </div>
-    	        </div>
-    	        <!--/* END CONTAINER */-->
-            </div>
-<!--/* END COPYRIGHT SECTION */-->	 
-        </footer>
-	</div>
-<!--/* End Footer */-->
 </html>
