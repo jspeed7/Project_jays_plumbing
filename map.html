@@ -12,12 +12,12 @@
 	    
 	    
 	    <!-- jQuery Map codex -->
-	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript"
-   src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+   src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript"
-   src="//code.jquery.com/jquery-latest.min.js"></script>
+   src="https://code.jquery.com/jquery-latest.min.js"></script>
    
 		<title>Jay's | Plumbing</title>
 		
@@ -59,158 +59,150 @@
     </break>
 
     	<body id="maincontent" class="continer-fluid">
-<!-- Contact Form -->
-        	
-        	
-        	    
-                <div class="continer-fluid">
-                    <form id="contact_form" class="form row-fluid col-sm-4 col-md-4" style="background-color: rgba(0, 0, 0, 0.30);" action="/" method="post" role="form">
-                        <!--<h1>Contact a plumber!</h1>-->
-    <!-- Section 1 of Form -->
-                        <fieldset class="form-group">
-                            <legend class="text-center"><span class="number">1.</span> Contact Information
-                            </legend>
-                            <label class="" for="name">Name:</label>
-                                <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
-                            <label class="" for="phone">Phone:</label>
-                                <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
-                            <label class="" for="Address">Address:</label>
-                                <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
-                            <label class="" for="zipcode">Zip code:</label>
-                                <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
-                            <label class="" for="mail">Email:</label>
-                                <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
-    <!-- Checkbox -->
-                            <br><span class="form-group ">
-                                    <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
-                                    
-                                    <label for="morning" class="morning checkbox-inline" required="">9am-12pm</label>
-                                    <input class="" type="checkbox" id="morning" value="morning" name="follow_up_time">
-                                    
-                                    <label for="afternoon" class="afternoon checkbox-inline" required="">12pm-3pm</label>
-                                    <input class="" type="checkbox" id="afternoon" value="afternoon" name="follow_up_time">
-                                    
-                                    <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
-                                    <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
-                            </span></br>
-    <!-- Radio button -->
-                            <br><span>
-                                <label class="radio">Customer Type:</label>
-                                    
-                                    <label for="residential" class="customer_type" required="">Residential</label>
-                                    <input type="radio" id="residential" value="residential" name="customer_type">
-                                    
-                                    <label for="commercial" class="customer_type" required="">Commercial</label>
-                                    <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
-                                    
-                            </span></br>
-                        </fieldset>
-    <!-- Section 2 of Form -->
-                        <fieldset class="form-group">
-                            <legend class="text-center"><span class="number">2.</span> Brief Discription</legend>
-                                <lable>Tells Us About It:</label>
-                                <br>
-                                    <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
-                                </br>
-    <!--/*Select menu*/-->
-                            <span><br>
-                                <label class="" for="problem">I Have A: </label>
-                                <select class="form-control" id="job" name="user_job" required="">
-                                    <optgroup label="I need help with..">
-                                        <option value="clogged">Backed-up/clogged</option>
-                                        <option value="broken">Broken</option>
-                                        <option value="general_install">Install</option>
-                                        <option value="leaky">Leaky</option>
-                                        <option value="new_install">New</option>
-                                        <option value="unknown">Not sure what's wrong</option>
-                                        <option value="other">Other</option>
-                                        <option value="service_inquire">Question about</option>
-                                        <option value="repair">Repair</option>
-                                    </optgroup>
-                                </select>
-                                <br>
-                                <label class="" for="service">With: </label>
-                                <select class="form-control" id="service" name="services" required="">
-                                    <optgroup label="Services">
-                                        <option value="sewer_servicing">Sewer</option>
-                                        <option value="sink_service">Sink</option>
-                                        <option value="shower_hub_service">Shower/hub</option>
-                                        <option value="broken_pipe_service">Broken pipe</option>
-                                        <option value="sump_pump_service">Sump pump</option>
-                                        <option value="faucet_fixture_service">Faucet/fixture</option>
-                                        <option value="toilet_service">Toilet</option>
-                                        <option value="disposal_service">Disposal</option>
-                                        <option value="water_heater_service">Water heater</option>
-                                        <option value="remodeling_service">Remodeling</option>
-                                        <option value="other_services">Other (explain in notes)</option>
-                                        <option value=""></option>
-                                    </optgroup>
-                                </select>
-                                </br>
-                            </br></span>
-                            <button class="btn btn-primary btn_info" type="submit">Submit</button>
-                            <br></br>
-                        </fieldset>
-                    </form>
-                </div>
-<!-- /* Start of Map */ -->
-                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-                        <div style="overflow:hidden;height:500px;width:600px;">
-                            <div id="gmap_canvas" style="height:500px;width:600px;"></div>
-                            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                        </div>
-                            <script type="text/javascript"> 
-                                function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(38.175489,-85.88014399999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.175489, -85.88014399999997)});infowindow = new google.maps.InfoWindow({content:"<b>Jay's Plumbing</b><br/>5251 Cane Run Rd<br/>40216 Louisville" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-                    </script>
-<!-- /* End of Map */ -->
-            
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     	    
-    	    <div class="col-sm-4">
-                <script type="text/javascript" src="javascript/widget.js"></script>
-                <script>$("#map").geoMap();</script>
-    	    </div>
-    	</body>
-    
-    	<br>
-	    <h2 id="map_Container" class="row-fluid col-sm-4"></h2>
-            <h3 class="col-sm-4 prompt">prompt service, morning noon or night!</h3>  
-                <a id="leak" class="col-sm-6"  href="images/overflow.jpg">
-                <img src="images/overflow.jpg" alt="overflow water damaged picture"></img>
-                </a>
-            	<div Class="samedayservice">Same day or next day service!
-        			 <p>Serving louisville and surrounding counties</p></div>
-    				
-                </section> 
-            <div id="wrapper">
-            </div>
-            <div id="sub_header" class="col-md-4 clearfix"> </div>
-            <div> Residential and Commercial <br> Services include:</br>
+<!-- Pop-Out Contact Form -->
+                    <div class="srf-box text-center pull-right col-xs-12 col-md-3">
+                      <h3 class="">Scheldule A Technician Now!</h3>
+                      <ul class="list-unstyled">
+                        <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
+                        <div id="popover-content" class="hide">
+                          <form class="form"  role="form">        
+        <!-- Section 1 of Form -->
+                            <fieldset class="form-group">
+                                <legend class="text-center"><span class="number">1.</span> Contact Information
+                                </legend>
+                                    <label class="" for="name">Name:</label>
+                                        <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
+                                    <label class="" for="phone">Phone:</label>
+                                        <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
+                                    <label class="" for="Address">Address:</label>
+                                        <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
+                                    <label class="" for="zipcode">Zip code:</label>
+                                        <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
+                                    <label class="" for="mail">Email:</label>
+                                        <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
+                <!-- Checkbox -->
+                                    <br><span class="form-group ">
+                                            <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
+                                            
+                                            <label for="morning" class="morning checkbox-inline" required="">9am-12pm</label>
+                                                <input class="" type="checkbox" id="morning" value="morning" name="follow_up_time">
+                                            
+                                            <label for="afternoon" class="afternoon checkbox-inline" required="">12pm-3pm</label>
+                                                <input class="" type="checkbox" id="afternoon" value="afternoon" name="follow_up_time">
+                                                
+                                            <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
+                                                <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
+                                    </span></br>
+                <!-- Radio button -->
+                                    <br><span>
+                                        <label class="radio">Customer Type:</label>
+                                            
+                                            <label for="residential" class="customer_type" required="">Residential</label>
+                                                <input type="radio" id="residential" value="residential" name="customer_type">
+                                                
+                                            <label for="commercial" class="customer_type" required="">Commercial</label>
+                                                <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
+                                                
+                                    </span></br>
+                                </fieldset>
+                <!-- Section 2 of Form -->
+                                <fieldset class="form-group">
+                                    <legend class="text-center"><span class="hd-primary number">2.</span> Brief Discription</legend>
+                                        <lable>Tells Us About It:</label>
+                                        <br>
+                                            <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
+                                        </br>
+                <!--/*Select menu*/-->
+                                        <span><br>
+                                            <label class="" for="problem">I Have A: </label>
+                                            <select class="form-control" id="job" name="user_job" required="">
+                                                <optgroup label="I need help with..">
+                                                    <option value="clogged">Backed-up/clogged</option>
+                                                    <option value="broken">Broken</option>
+                                                    <option value="general_install">Install</option>
+                                                    <option value="leaky">Leaky</option>
+                                                    <option value="new_install">New</option>
+                                                    <option value="unknown">Not sure what's wrong</option>
+                                                    <option value="other">Other</option>
+                                                    <option value="service_inquire">Question about</option>
+                                                    <option value="repair">Repair</option>
+                                                </optgroup>
+                                            </select>
+                                            <br>
+                                            <label class="" for="service">With: </label>
+                                            <select class="form-control" id="service" name="services" required="">
+                                                <optgroup label="Services">
+                                                    <option value="sewer_servicing">Sewer</option>
+                                                    <option value="sink_service">Sink</option>
+                                                    <option value="shower_hub_service">Shower/hub</option>
+                                                    <option value="broken_pipe_service">Broken pipe</option>
+                                                    <option value="sump_pump_service">Sump pump</option>
+                                                    <option value="faucet_fixture_service">Faucet/fixture</option>
+                                                    <option value="toilet_service">Toilet</option>
+                                                    <option value="disposal_service">Disposal</option>
+                                                    <option value="water_heater_service">Water heater</option>
+                                                    <option value="remodeling_service">Remodeling</option>
+                                                    <option value="other_services">Other (explain in notes)</option>
+                                                    <option value=""></option>
+                                                </optgroup>
+                                            </select>
+                                            </br>
+                                        </br></span>
+                                        <button class="btn btn-default pull-right btn_info" type="submit">Submit</button>
+                                        <br></br>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </ul>
+                    </div>
+                    <!--/* END CONTAINER */-->
+<!-- /* Start of Map */ -->
+                    <div id="gmap_canvas">
+                    <!--    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>-->
+                    <!--    <div style="overflow:hidden;height:500px;width:600px;">-->
+                    <!--        <div id="gmap_canvas" style="height:500px;width:600px;"></div>-->
+                    <!--        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>-->
+                    <!--    </div>-->
+                    <!--        <script type="text/javascript"> -->
+                    <!--            function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(38.175489,-85.88014399999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.175489, -85.88014399999997)});infowindow = new google.maps.InfoWindow({content:"<b>Jay's Plumbing</b><br/>5251 Cane Run Rd<br/>40216 Louisville" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);-->
+                    <!--</script>-->
+                    </div>
+                    
+<!-- /* End of Map */ -->
 
-            <div class="span4 col-md-12 job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
-    	    </div>
-	
-	</br>
-	<footer class="footer row-fluid">
-<!-- START COPYRIGHT SECTION -->   	
-        <div class="copyright aligncenter">
-            <div class="container-fluid clearfix">
-                <div class="container-fluid col-xs-3 col-sm-12 text-center">
-           		    <a href="index.html">
-                        <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
-				</div> 
-                <div class="social-icons text-center container-fluid">
-                    <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
-                    <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
-                    <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
-                </div>
-                <div class="container-fluid text-center">
-			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
-			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
-    	            </p>
-                </div>
-	        </div><!-- END CONTAINER -->
-        </div>
-<!-- END COPYRIGHT SECTION -->	 
-    </footer>
+<!--/* Begin Script Tags */--> 
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    	    <script type="text/javascript" src="javascript/widget.js"></script>
+           
+    	</body>
+    	
+    </div>
+<!--/* Begin Footer */-->    
+    <div id="divFooter" class="container clearfix">
+        <footer class="footer row">
+<!--/* START COPYRIGHT SECTION */-->   	
+            <div class="copyright aligncenter">
+                <div class="container-fluid clearfix">
+                    <div class="container-fluid col-xs-3 col-sm-12 text-center">
+               		    <a href="index.html">
+                            <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
+    				</div> 
+                    <div class="social-icons text-center container-fluid">
+                        <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
+                        <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
+                        <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
+                    </div>
+                    <div class="container-fluid text-center">
+    			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
+    			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
+        	            </p>
+                    </div>
+    	        </div>
+    	        <!--/* END CONTAINER */-->
+            </div>
+<!--/* END COPYRIGHT SECTION */-->	 
+        </footer>
+	</div>
+<!--/* End Footer */-->
 </html>

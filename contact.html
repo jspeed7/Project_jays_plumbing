@@ -12,14 +12,14 @@
 	    
 	    
 	    <!-- jQuery Map codex -->
-	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
         
         <script type="text/javascript"
-   src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+   src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript"
-   src="//code.jquery.com/jquery-latest.min.js"></script>
+   src="https://code.jquery.com/jquery-latest.min.js"></script>
    
 		<title>Jay's | Plumbing</title>
 		
@@ -59,7 +59,7 @@
     <break>
         <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
     </break>
-
+    <div>
     	<body id="maincontent" class="continer-fluid">
     	    
     	    
@@ -118,7 +118,7 @@
                 <!-- Section 2 of Form -->
                                 <fieldset class="form-group">
                                     <legend class="text-center"><span class="hd-primary number">2.</span> Brief Discription</legend>
-                                        <lable>Tells Us About It:</label>
+                                        <label>Tells Us About It:</label>
                                         <br>
                                             <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
                                         </br>
@@ -164,22 +164,23 @@
                                 </form>
                             </div>
                         </ul>
-                    </div>
 <!-- /* End of SRF */ -->
+                    </div>
+                           <!--/* END CONTAINER */-->
 
 
 <!-- /* Start of JP Contact Info */ -->
                   	<div class="jpContactInfo col-xs-12 col-md-5 pull-right">
                 		<h2 class="text-center contactH2">Jay's Plumbing</h2>
                 		<address class="">
-                		    <div class="col-xs-4 col-sm-6">
+                		    <div class=" col-sm-6">
                 			    <strong>Mailing Address:</strong><br>
                 			    <span class="officeAdd text-left">
                 			        P.O. Box 16016 <br> 
                         			Louisville, KY <br>
                         			40256</span>
                 			</div>
-                			<div class="col-xs-4 col-sm-6">
+                			<div class="col-sm-6">
                 			    <strong>Office Address:</strong><br>
                         			<span class="officeAdd text-left">
                             		    5251 Cane Run Rd<br>
@@ -198,75 +199,41 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.4814636582787!2d-85.88014399999999!3d38.17548899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88691430b1018ae7%3A0xfd37cd3a16e571db!2s5251+Cane+Run+Rd%2C+Louisville%2C+KY+40216!5e0!3m2!1sen!2sus!4v1436996720315" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    
                 </div>
             </div>   
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-               
+
+<!--/* Begin Script Tags */-->            
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    	    
-    	    <div class="col-sm-4">
-                <script type="text/javascript" src="javascript/widget.js"></script>
-                <script>$("#map").geoMap();</script>
-    	    </div>
+    	    <script type="text/javascript" src="javascript/widget.js"></script>
+
     	</body>
-    
-    	<br>
-	    <h2 id="map_Container" class="row-fluid col-sm-4"></h2>
-            <h3 class="col-sm-4 prompt">prompt service, morning noon or night!</h3>  
-                <a id="leak" class="col-sm-6"  href="images/overflow.jpg">
-                <img src="images/overflow.jpg" alt="overflow water damaged picture"></img>
-                </a>
-            	<div Class="samedayservice">Same day or next day service!
-        			 <p>Serving louisville and surrounding counties</p></div>
-    				
-                </section> 
-            <div id="wrapper">
+    </div>
+
+<!--/* Begin Footer */-->    
+    <div id="divFooter" class="container clearfix">
+        <footer class="footer row">
+<!--/* START COPYRIGHT SECTION */-->   	
+            <div class="copyright aligncenter">
+                <div class="container-fluid clearfix">
+                    <div class="container-fluid col-xs-3 col-sm-12 text-center">
+               		    <a href="index.html">
+                            <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
+    				</div> 
+                    <div class="social-icons text-center container-fluid">
+                        <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
+                        <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
+                        <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
+                    </div>
+                    <div class="container-fluid text-center">
+    			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
+    			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
+        	            </p>
+                    </div>
+    	        </div>
+    	        <!--/* END CONTAINER */-->
             </div>
-            <div id="sub_header" class="col-md-4 clearfix"> </div>
-            <div> Residential and Commercial <br> Services include:</br>
-
-            <div class="span4 col-md-12 job" style="display:block" ><font style="font-size: 48px;"> No job too small or large<br></br></font>
-    	    </div>
-	
-	</br>
-	<footer class="footer row-fluid">
-<!-- START COPYRIGHT SECTION -->   	
-        <div class="copyright aligncenter">
-            <div class="container-fluid clearfix">
-                <div class="container-fluid col-xs-3 col-sm-12 text-center">
-           		    <a href="index.html">
-                        <img class="copyright-logo" src="images/3logo.png" alt="logo"/></a>
-				</div> 
-                <div class="social-icons text-center container-fluid">
-                    <div class="social-icon social-email col-xs-9 col-sm-4"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:jaysplumbing@bellsouth.net" title="Email">Email</a></div>
-                    <div class="social-icon phone col-xs-9 col-sm-4"><span class="fa fa-phone"></span><a href="tel:+1-502-449-0492" target="_blank" title="phone">Phone</a></div>
-                    <div class="social-icon social-facebook col-xs-9 col-sm-4"><span class="fa fa-facebook-official"></span><a href="https://www.facebook.com/Jaysplumbingky" target="_blank" title="Facebook">Facebook Page</a></div>
-                </div>
-                <div class="container-fluid text-center">
-			        <p>&copy;<script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2009, null, '-')); else document.write((new Date()).getFullYear());</script>
-			        Jay's Plumbing ALL RIGHTS RESERVED.  | Address: 5251 Cane Run Rd Louisville, Kentucky  |  (502) 449-0492
-    	            </p>
-                </div>
-	        </div><!-- END CONTAINER -->
-        </div>
-<!-- END COPYRIGHT SECTION -->	 
-    </footer>
+<!--/* END COPYRIGHT SECTION */-->	 
+        </footer>
+	</div>
+<!--/* End Footer */-->
 </html>
-
