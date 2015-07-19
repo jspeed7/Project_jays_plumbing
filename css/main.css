@@ -2,6 +2,7 @@
 
 #fullPage {
     max-width: 1025px;
+    padding: 10px 40px;
 }
 
 .pull-left {
@@ -24,6 +25,8 @@
 .popover {max-width:400px;}
 
 
+
+
 /************************************************************
 
 Header
@@ -33,6 +36,11 @@ Header
 header {
     border-bottom: 15px;
     background: #FFFFFF;
+}
+
+#topHeaderDiv {
+    border-bottom: solid 1px #888888;
+    margin-bottom: 10px;
 }
 
 
@@ -119,11 +127,6 @@ ul.nav_bar {
     -webkit-box-shadow: inset 0 0 5px #000000;
     box-shadow:         inset 0 0 5px #000000;
 }
-
-/*.drpdwn_nav {*/
-/*    background: #000000;*/
-/*    color: #FEFEFE;*/
-/*}*/
 
 
 /************************************************************
@@ -225,11 +228,6 @@ body {
 }
 
 
-#contactDivider {
-    border-top: solid 10px;
-    border-bottom: solid 10px;
-    /*opacity: .10;*/
-}
 
 
 /************************************************************
@@ -303,7 +301,7 @@ Contact Form:
 
 .contactH2 {
     padding: 0 0 10px;
-    border-bottom: solid #888888;
+    border-bottom: solid #FF6500;
     margin: 0 0 5px;
 }
 
@@ -320,19 +318,23 @@ Footer
 *************************************************************/
 
 #divFoot {
-    border-top: solid 10px #000000; 
-    width: 100%;
+    border-top: solid 1px #888888;
+    margin-top: 10px;
 }
-
 
 footer {
     clear: both;
     padding-top: 40px;
 }
 
-.social-icon a {
-    display: inline-block;
+.social-icons span {
     padding: 0 10px;
+    color: #000;
+}
+
+.btn-icon {
+    display: inline-block;
+    text-decoration: none;
 }
 
 footer .copyright-logo {
@@ -350,6 +352,12 @@ Media Query : Repsonsive Web
 
         /* Medium Devices, Desktops */
     @media only screen and (min-width: 992px) {
+        
+        .row {
+            padding: 0;
+            margin: 0;
+        }
+        
         .img_responsive {
             float: left;
             
@@ -395,13 +403,19 @@ Media Query : Repsonsive Web
 
         /* Extra Small Devices, Phones */ 
     @media only screen and (min-width: 651px) and (max-width: 991px) {
+         .row {
+            padding: 0;
+            margin: 0;
+        }
  
          #header img {
             float: left;
         }
-        
+    
+                
         .jpContactInfo {
             padding: 30px;
+            text-align: center;
         }
         
         ul .nav_bar {
@@ -445,9 +459,11 @@ Media Query : Repsonsive Web
          #header img {
             float: left;
         }
+       
         
         .jpContactInfo {
             padding: 30px;
+            text-align: center;
         }
         
         ul .nav_bar {
@@ -457,10 +473,9 @@ Media Query : Repsonsive Web
             margin: 0;
     	    background: #000000;
         }
-        
+
     	.nav li {    
     	    display: inline;
-    	    /*margin: 0 5px;*/
     	    padding: 0;
         }
         
@@ -489,13 +504,18 @@ Media Query : Repsonsive Web
 
     @media only screen and (max-width : 560px ) {
         
+        .row {
+            padding: 0;
+            margin: 0;
+        }
+
         .jpContactInfo {
-            padding: 30px;
+            padding: 30px 0;
+            text-align: center;
         }
         
         .nav {    
             position: inherit;
-        	padding: 20px 20px;
         	float: none;
         }
 
