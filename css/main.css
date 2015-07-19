@@ -168,7 +168,7 @@ form .btn_info {
 }
 
 .nav .emergency_button:hover {
-    color: red;	
+    color: rgba(255, 0, 0, 0.9);	
     background-color: #FFF;
 	/*font-weight: bold;*/
 	-moz-box-shadow:    inset 0 0 15px #000000;
@@ -220,7 +220,22 @@ body {
     width: 100%;
 }
 #bodyDiv {
-    background-color: #888888;
+    background-color: rgba(71, 69, 71, 0.025);
+}
+
+.disc10 {
+    font-size: 14px;
+    
+}
+
+.disc10 img {
+    max-width: 75px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.disclaimer {
+    font-size: 12px;
 }
 
 .container {
@@ -228,7 +243,11 @@ body {
 }
 
 .heading_24_7 img {
-    max-width: 100px;
+    max-width: 200px;
+}
+
+.heading_24_7 {
+    color: rgba(212, 0, 0, 0.9);
 }
 
 
@@ -291,7 +310,7 @@ Contact Form:
     border-left: solid #FF6500;
     border-right: solid #FF6500;
     border-radius: 6px;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .SRF_arrow {
@@ -396,7 +415,10 @@ Media Query : Repsonsive Web
             padding: 5px 5px;
             margin: 0;
         }
-
+        
+        .disc10 {
+            text-align: left;
+        }
     
     }
 
@@ -507,6 +529,10 @@ Media Query : Repsonsive Web
     /* Custom, iPhone Retina */ 
 
     @media only screen and (max-width : 560px ) {
+        
+        body {
+            font-size: 14px;
+        }
         
         .row {
             padding: 0;
