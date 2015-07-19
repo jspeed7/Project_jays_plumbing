@@ -31,17 +31,17 @@
                     <!--<a class="brand" href="#">Jay's Plumbing</a>-->
                         <div class="nav-collapse">
                             <ul class="nav_bar nav col-sm-push-2 hidden-md hidden-lg">
-                                <li class="active"><a href="index.html" class="selected">Home</a></li>
+                                <li class=""><a href="index.html" class="">Home</a></li>
                                 <li class=""><a href="about.html" class="">About</a></li>
                                 <li class=""><a href="contact.html" class="">Contact</a></li>
                             </ul>
     <!-- Dropdown -->
                             <li class="dropdown visible-md visible-lg col-sm-push-2 col-md-3">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Home<b class="caret"></b></a>
                                 
                                 <ul class="dropdown-menu dropdown-menu-right drpdwn">
-                                    <li class=""><a href="index.html" class="selected">Home</a></li>
-                                    <li class=""><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                                    <li class=""><a href="index.html" class="drpNav">Home</a></li>
+                                    <li class=""><a href="map.html" class="sightings selected">Plumber Sightings</a></li>
                                     <li class=""><a href="about.html" class="drpNav" >About</a></li>
                                     <li class=""><a href="contact.html" class="drpNav">Contact</a></li>
                                 </ul>
@@ -64,10 +64,11 @@
                         <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
                         <div id="popover-content" class="hide">
                           <form class="form"  role="form">        
-        <!-- Section 1 of Form -->
+           <!-- Section 1 of Form -->
                             <fieldset class="form-group">
                                 <legend class="text-center"><span class="number">1.</span> Contact Information
                                 </legend>
+                                    <p class="text-center"> Scheldule your Technician Today<br> &amp you'll recieve 10% off!!!</p>
                                     <label class="" for="name">Name:</label>
                                         <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
                                     <label class="" for="phone">Phone:</label>
@@ -145,6 +146,9 @@
                                                 </optgroup>
                                             </select>
                                             </br>
+                                        <div class="radio disabled active">
+                                            <label><input type="radio" name="optradio" checked="checked" disabled>10% online only discount</label>
+                                        </div>
                                         </br></span>
                                         <button class="btn btn-default pull-right btn_info" type="submit">Submit</button>
                                         <br></br>
@@ -153,6 +157,12 @@
                             </div>
                         </ul>
 <!-- /* End of SRF */ -->
+                    </div>
+
+                    <div class="row text-center">
+                        <h1 class="col-sm-12 col-md-8 ">Plumber Sightings ... Coming Soon! </h1> 
+                        <p class="col-sm-6 col-md-4 ">Have you ever wondered where your tech is? <br> Or maybe, you have seen our technicians out and about serving the community... </p>  
+                        <p class="col-sm-6 col-md-4">Or maybe, you have seen a truck the looks like our and you would like to confirm if we were indeed in your neighborhood. <br> Well now you can with our new Plumber Sightings tool!</p>
                     </div>
 <!-- /* Start of Map */ -->
                     <div id="s">

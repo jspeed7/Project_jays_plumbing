@@ -216,7 +216,11 @@ Body:
 body { 
     padding-top: 30px;
     font-size: 16px;
+    color: #000;
     width: 100%;
+}
+#bodyDiv {
+    background-color: #888888;
 }
 
 .container {
