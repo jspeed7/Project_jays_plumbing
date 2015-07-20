@@ -342,6 +342,11 @@ Customer Reviews:
 
 *************************************************************/
 
+.customerReview {
+    border: solid 2px lightgrey;
+    border-radius: 40px;
+}
+
 .starRating {
     max-width: 100px;
 }
