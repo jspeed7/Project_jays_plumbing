@@ -342,10 +342,22 @@ Customer Reviews:
 
 *************************************************************/
 
+/**On Home Page**/
+
 .customerReview {
     border: solid 2px lightgrey;
     border-radius: 40px;
+}   
+
+/**On About Page**/
+
+td img {
+     width: 60px;
 }
+
+/*.img-circle {*/
+/*    width: 50%;*/
+/*}*/
 
 .starRating {
     max-width: 100px;
@@ -360,8 +372,12 @@ Customer Reviews:
 }
     
 .pagination a {
-    color: #555;
+    color: #FF6500;
 }
+
+.panel {
+    padding: 0;
+ }
 
 .panel ul {
     padding: 0px;
@@ -369,10 +385,14 @@ Customer Reviews:
     list-style: none;
 }
 
+.panel-body {
+    padding: 0;
+}
+
 .news-item {
     padding: 4px 4px;
     margin: 0px;
-    border-bottom: 1px dotted #555;
+    border-bottom: 1px solid #FF6500;
 }
 
 
