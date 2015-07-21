@@ -325,12 +325,12 @@ function randomLocationGen() {
 })( jQuery, window, document );
 
 $('.ticker1, .ticker2').easyTicker({
-	direction: 'up',
+	direction: 'down',
 	easing: 'swing',
 	speed: 'slow',
-	interval: 2000,
+	interval: 4000,
 	height: 'auto',
-	visible: 0,
+	visible: 3,
 	mousePause: 1,
 	controls: {
 		up: '',
