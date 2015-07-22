@@ -1,4 +1,3 @@
-
 // snipet for popout SRF
 $("[data-toggle=popover]").popover({
     html: true, 
@@ -6,16 +5,6 @@ $("[data-toggle=popover]").popover({
           return $('#popover-content').html();
         }
 });
-
-// Facebook widget snipet
-
-$(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=238957949482864";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
 
 
 // map for widget
@@ -116,6 +105,21 @@ function randomLocationGen() {
   
   console.log(combinedArrys + " is at " + location);
 }());
+
+
+
+//============================== Customer Review ===============================//
+
+
+// Facebook Page widget plugin
+
+$(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=238957949482864";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 // snipet for customer review window
@@ -340,3 +344,74 @@ $('.ticker1, .ticker2').easyTicker({
 		stopText: 'Stop'
 	}
 });
+
+//================================  User Ratings ===============================// 
+//=========================== Jquery, Ajax & Parse.com =========================//
+
+$('.ratings_stars').hover(
+    
+    // Handles the mouseover
+    function() {
+        $(this).prevAll().andSelf().addClass('ratings_over');
+        $(this).nextAll().removeClass('ratings_vote'); 
+    },
+    
+    // Handles the mouseout
+    function() {
+        $(this).prevAll().andSelf().removeClass('ratings_over');
+        set_votes($(this).parent());
+    }
+);
+
+$('.rate_widget').each(function(i) {
+    var widget = this;
+    var out_data = {
+        widget_id : $(widget).attr('id'),
+        fetch: 1
+    };
+    $.post(
+        'ratings.js',
+        out_data,
+        function(INFO) {
+            $(widget).data( 'fsr', INFO );
+            set_votes(widget);
+        },
+        'json'
+    );
+});
+
+
+
+
+function set_votes(widget) {
+ 
+    var avg = $(widget).data('fsr').whole_avg;
+    var votes = $(widget).data('fsr').number_votes;
+    var exact = $(widget).data('fsr').dec_avg;
+     
+    $(widget).find('.star_' + avg).prevAll().andSelf().addClass('ratings_vote');
+    $(widget).find('.star_' + avg).nextAll().removeClass('ratings_vote'); 
+    $(widget).find('.total_votes').text( votes + ' votes recorded (' + exact + ' rating)' );
+}
+
+// click handler
+
+$('.ratings_stars').bind('click', function() {
+    var star = this;
+    var widget = $(this).parent();
+     
+    var clicked_data = {
+        clicked_on : $(star).attr('class'),
+        widget_id : widget.attr('id')
+    };
+    $.post(
+        'ratings.php',
+        clicked_data,
+        function(INFO) {
+            widget.data( 'fsr', INFO );
+            set_votes(widget);
+        },
+        'json'
+    ); 
+});
+

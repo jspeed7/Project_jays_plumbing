@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+    <!--/* Meta & link Tags */-->
 		<meta name="description" content="JaysPlumbing">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -11,13 +12,15 @@
 	    <meta name="format-detection" content="telephone=no">
 	    
 	    
-    <!-- jQuery Map codex -->
-	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--/* Script Codex */-->
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-   
-		<title>Jay's | Plumbing</title>
+    <!--/* Parse Script Tag */-->    
+        <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+<!--/* Begin HTML Code: */-->    
+    	<title>Jay's | Plumbing</title>
 		
 	</head>
 	<div id="fullPage" class="container">
@@ -50,6 +53,7 @@
                     </div>
                 </nav>
             </header>
+    <!--/* End Header */-->
         </div>
         <break>
             <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
@@ -80,28 +84,28 @@
                         </div>
                     </div>
     <!-- /* End discount coupon CTA */-->
-    <!-- Pop-Out Contact Form -->
+    <!--/* Pop-Out Contact Form */-->
                     <div class="srf-box text-center pull-right col-xs-12 col-sm-4 col-md-4">
                       <h3 class="">Scheldule A Technician Now!</h3>
                       <ul class="list-unstyled">
                         <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
                         <div id="popover-content" class="hide">
-                          <form class="form"  role="form">        
-        <!-- Section 1 of Form -->
+                          <form id="SRForm" class="form" role="form">        
+        <!--/* Section 1 of Form */-->
                             <fieldset class="form-group">
                                 <legend class="text-center"><span class="number">1.</span> Contact Information
                                 </legend>
                                     <p class="text-center"> Scheldule your Technician Today<br> &amp you'll recieve 10% off!!!</p>
                                     <label class="" for="name">Name:</label>
-                                        <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
+                                        <input class="form-control" type="text" id="customer_name" name="customer_name" required="" placeholder="First &amp Last Name"> 
                                     <label class="" for="phone">Phone:</label>
-                                        <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
+                                        <input class="form-control" type="tel" id="customer_phone" name="customer_phone" required="" placeholder="Contact Number">
                                     <label class="" for="Address">Address:</label>
-                                        <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
+                                        <input class="form-control" type="text" id="customer_address" name="customer_address" required="" placeholder="Address">
                                     <label class="" for="zipcode">Zip code:</label>
-                                        <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
+                                        <input class="form-control" type="number" id="customer_zipcode" name="customer_zipcode" required="" placeholder="Zip code">
                                     <label class="" for="mail">Email:</label>
-                                        <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
+                                        <input class="form-control" type="email" id="customer_email" name="customer_email" required="" placeholder="Email Address">
                 <!-- Checkbox -->
                                     <br><span class="form-group ">
                                             <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
@@ -117,13 +121,13 @@
                                     </span></br>
                 <!-- Radio button -->
                                     <br><span>
-                                        <label class="radio">Customer Type:</label>
+                                        <label class="radio" id="customer_type">Customer Type:</label>
                                             
                                             <label for="residential" class="customer_type" required="">Residential</label>
-                                                <input type="radio" id="residential" value="residential" name="customer_type">
+                                                <input type="radio" id="customer_type_residential" value="residential" name="customer_type">
                                                 
                                             <label for="commercial" class="customer_type" required="">Commercial</label>
-                                                <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
+                                                <input class="radio-inline" type="radio" id="customer_type_commercial" value="commercial" name="customer_type">
                                                 
                                     </span></br>
                                 </fieldset>
@@ -132,12 +136,12 @@
                                     <legend class="text-center"><span class="hd-primary number">2.</span> Brief Discription</legend>
                                         <label>Tells Us About It:</label>
                                         <br>
-                                            <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
+                                            <textarea class="textarea form-control" for="comments" id="customer_comment" name="customer_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
                                         </br>
                 <!--/*Select menu*/-->
                                         <span><br>
                                             <label class="" for="problem">I Have A: </label>
-                                            <select class="form-control" id="job" name="user_job" required="">
+                                            <select class="form-control" id="customer_I_Have" name="customer_I_Have" required="">
                                                 <optgroup label="I need help with..">
                                                     <option value="clogged">Backed-up/clogged</option>
                                                     <option value="broken">Broken</option>
@@ -152,7 +156,7 @@
                                             </select>
                                             <br>
                                             <label class="" for="service">With: </label>
-                                            <select class="form-control" id="service" name="services" required="">
+                                            <select class="form-control" id="customer_With" name="customer_With" required="">
                                                 <optgroup label="Services">
                                                     <option value="sewer_servicing">Sewer</option>
                                                     <option value="sink_service">Sink</option>
@@ -173,7 +177,7 @@
                                             <label><input type="radio" name="optradio" checked="checked" disabled>10% online only discount</label>
                                         </div>
                                         </br></span>
-                                        <button class="btn btn-default pull-right btn_info" type="submit">Submit</button>
+                                        <button id="custData" class="btn btn-default pull-right btn_info" type="submit">Submit</button>
                                         <br></br>
                                     </fieldset>
                                 </form>
@@ -260,7 +264,7 @@
     <!--/* Begin Script Tags */-->            
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         	    <script type="text/javascript" src="javascript/widget.js"></script>
-    
+        	    <script type="text/javascript" src="javascript/dataparse.js"></script>
         	</body>
         	
         </div>
