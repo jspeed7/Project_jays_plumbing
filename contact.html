@@ -9,39 +9,36 @@
 	    <link rel="stylesheet" href="css/main.css">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="format-detection" content="telephone=no">
-	    
-	    
-    <!-- jQuery Map codex -->
+    <!--/* jQuery Map codex */-->
 	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-   
+<!--/* Begin HTML Code: */-->   
 		<title>Jay's | Plumbing</title>
-		
 	</head>
 	<div id="fullPage" class="container">
         <div id="topHeaderDiv" class="row text-center">
             <header id="header">
                 <img class="img-responsive img_responsive img-rounded" href="index.html" src="images/3logo.png" alt="Responsive image"> 
-                
-            	<nav class="nav">
+              	<nav class="nav">
                     <a href="tel:+1-502-449-0492" class="col-sm-push-2 col-md-3 emergency_button" role="button">24/7 Emergency service! <br>502-449-0492</a>
             	    <div class="nav-collapse">
-                    <!--<a class="brand" href="#">Jay's Plumbing</a>-->
                         <div class="nav-collapse">
                             <ul class="nav_bar nav col-sm-push-2 hidden-md hidden-lg">
                                 <li class=""><a href="index.html" class="">Home</a></li>
                                 <li class=""><a href="about.html" class="">About</a></li>
                                 <li class="active"><a href="contact.html" class="selected">Contact</a></li>
                             </ul>
-    <!-- Dropdown -->
+    <!--/* Dropdown */-->
                             <li class="dropdown visible-md visible-lg col-sm-push-2 col-md-3">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
                                 
                                 <ul class="dropdown-menu dropdown-menu-right drpdwn">
                                     <li class=""><a href="index.html" class="drpNav">Home</a></li>
-                                    <li class=""><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                    <!--/* Plumber Sighting soon to launch */-->
+                                    <li class="hide"><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                        <!--/* End Plumber Sighting */-->            
                                     <li class=""><a href="about.html" class="drpNav" >About</a></li>
                                     <li class=""><a href="contact.html" class="selected">Contact</a></li>
                                 </ul>
@@ -55,37 +52,33 @@
             <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
         </break>
         <div class="row">
-            <body id="maincontent" >	    
-    	    
-    	    
-    	    
+            <body id="maincontent" >
 <!-- /* Start of Map */ -->            
             <div id="contactDivider" class="row">
             	<div class="">
-            	    
-<!-- Pop-Out Contact Form -->
-                    <div class="srf-box text-center pull-right col-xs-12 col-md-3">
+<!--/* Pop-Out Contact Form */-->
+                    <div class="srf-box text-center pull-right col-xs-12 col-sm-4 col-md-4">
                       <h3 class="">Scheldule A Technician Now!</h3>
                       <ul class="list-unstyled">
                         <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
                         <div id="popover-content" class="hide">
-                          <form class="form"  role="form">        
-        <!-- Section 1 of Form -->
+                          <form id="form" action="" class="form">        
+        <!--/* Section 1 of Form */-->
                             <fieldset class="form-group">
                                 <legend class="text-center"><span class="number">1.</span> Contact Information
                                 </legend>
                                     <p class="text-center"> Scheldule your Technician Today<br> &amp you'll recieve 10% off!!!</p>
                                     <label class="" for="name">Name:</label>
-                                        <input class="form-control" type="text" id="name" name="user_name" required="" placeholder="First &amp Last Name"> 
+                                        <input class="form-control" type="text" id="customer_name" name="customer_name" required="" placeholder="First &amp Last Name"> 
                                     <label class="" for="phone">Phone:</label>
-                                        <input class="form-control" type="tel" id="phone" name="user_phone" required="" placeholder="Contact Number">
+                                        <input class="form-control" type="tel" id="customer_phone" name="customer_phone" required="" placeholder="Contact Number">
                                     <label class="" for="Address">Address:</label>
-                                        <input class="form-control" type="text" id="address" name="user_address" required="" placeholder="Address">
+                                        <input class="form-control" type="text" id="customer_address" name="customer_address" required="" placeholder="Address">
                                     <label class="" for="zipcode">Zip code:</label>
-                                        <input class="form-control" type="number" id="zipcode" name="user_zipcode" required="" placeholder="Zip code">
+                                        <input class="form-control" type="number" id="customer_zipcode" name="customer_zipcode" required="" placeholder="Zip code">
                                     <label class="" for="mail">Email:</label>
-                                        <input class="form-control" type="email" id="mail" name="user_email" required="" placeholder="Email Address">
-                <!-- Checkbox -->
+                                        <input class="form-control" type="email" id="customer_email" name="customer_email" required="" placeholder="Email Address">
+                <!--/* Checkbox */-->
                                     <br><span class="form-group ">
                                             <label class="checkbox" id="time_to_call">Best time you can be reached:</label>
                                             
@@ -98,29 +91,29 @@
                                             <label for="evening" class="evening checkbox-inline" required="">3pm-5pm</label>
                                                 <input class="" type="checkbox" id="evening" value="evening" name="follow_up_time">
                                     </span></br>
-                <!-- Radio button -->
+                <!--/* Radio button */-->
                                     <br><span>
-                                        <label class="radio">Customer Type:</label>
+                                        <label class="radio" id="customer_type">Customer Type:</label>
                                             
                                             <label for="residential" class="customer_type" required="">Residential</label>
-                                                <input type="radio" id="residential" value="residential" name="customer_type">
+                                                <input type="radio" id="customer_type_residential" value="residential" name="customer_type">
                                                 
                                             <label for="commercial" class="customer_type" required="">Commercial</label>
-                                                <input class="radio-inline" type="radio" id="commercial" value="commercial" name="customer_type">
+                                                <input class="radio-inline" type="radio" id="customer_type_commercial" value="commercial" name="customer_type">
                                                 
                                     </span></br>
                                 </fieldset>
-                <!-- Section 2 of Form -->
+                <!--/* Section 2 of Form */-->
                                 <fieldset class="form-group">
                                     <legend class="text-center"><span class="hd-primary number">2.</span> Brief Discription</legend>
                                         <label>Tells Us About It:</label>
                                         <br>
-                                            <textarea class="textarea form-control" for="comments" id="comment" name="user_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
+                                            <textarea class="textarea form-control" for="comments" id="customer_comment" name="customer_comment" rows="3" required="" placeholder="Discribe the situation here:"></textarea>
                                         </br>
                 <!--/*Select menu*/-->
                                         <span><br>
                                             <label class="" for="problem">I Have A: </label>
-                                            <select class="form-control" id="job" name="user_job" required="">
+                                            <select class="form-control" id="customer_I_Have" name="customer_I_Have" required="">
                                                 <optgroup label="I need help with..">
                                                     <option value="clogged">Backed-up/clogged</option>
                                                     <option value="broken">Broken</option>
@@ -135,7 +128,7 @@
                                             </select>
                                             <br>
                                             <label class="" for="service">With: </label>
-                                            <select class="form-control" id="service" name="services" required="">
+                                            <select class="form-control" id="customer_With" name="customer_With" required="">
                                                 <optgroup label="Services">
                                                     <option value="sewer_servicing">Sewer</option>
                                                     <option value="sink_service">Sink</option>
@@ -156,15 +149,13 @@
                                             <label><input type="radio" name="optradio" checked="checked" disabled>10% online only discount</label>
                                         </div>
                                         </br></span>
-                                        <button class="btn btn-default pull-right btn_info" type="submit">Submit</button>
-                                        <br></br>
+                                        <button id="custData" class="btn btn-default pull-right btn_info" onclick="sendAJAX()">Submit</button>
                                     </fieldset>
                                 </form>
                             </div>
                         </ul>
-<!-- /* End of SRF */ -->
+    <!-- /* End of SRF */ -->
                     </div>
-
 <!-- /* Start of JP Contact Info */ -->
                   	<div class="jpContactInfo col-xs-12 col-md-5 pull-right">
                 		<h2 class="text-center contactH2">Jay's Plumbing</h2>
@@ -198,7 +189,7 @@
                 </div>
             </div>   
 
-<!--/* Begin Script Tags */-->            
+<!--/* Script Tags */-->            
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     	    <script type="text/javascript" src="javascript/widget.js"></script>
     
@@ -208,7 +199,7 @@
     <!--/* Begin Footer */-->    
         <div class="row clearfix">
             <footer id="divFoot" class="footer">
-    <!--/* START COPYRIGHT SECTION */-->   	
+    <!--/* Start Copyright */-->   	
                 <div class="copyright aligncenter">
                     <div class="clearfix">
                         <div class="col-xs-3 col-sm-12 text-center">
@@ -227,7 +218,7 @@
                         </div>
         	        </div>
                 </div>
-    <!--/* END COPYRIGHT SECTION */-->	 
+    <!--/* End Copyright */-->	 
             </footer>
     	</div>
     <!--/* End Footer */-->

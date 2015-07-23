@@ -10,55 +10,21 @@
 	    <link rel="stylesheet" href="css/main.css">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="format-detection" content="telephone=no">
-	    
-	    
-    <!--/* Script Codex */-->
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--/* jQuery Map codex */-->
+	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-<!--/* Begin AJAX XMLHttpRequest */-->    
-        <script>
-        
-            var xhr = new XMLHttpRequest();
-            
-            xhr.onreadystatechange = function () {
-            	if (xhr.readyState === 4) {
-            		document.getElementById("ajax").innerHTML = xhr.responseText;
-            	}
-            	while (xhr.readyState === 2) {
-            	    document.getElementById("ajax").innerHTML = xhr.responseText;
-            	    
-            	}
-            	
-            };
-            <!--/* Open Request */-->
-            
-            xhr.open('POST', 'https://api.cloud9charts.com/live/{api.parse.com/1/CustomerInfo}');
-            
-            <!--/* Send Request */-->
-            
-             function sendAJAX() {
-            	xhr.send();
-            }
-        
-        
-        </script>
-
 <!--/* Begin HTML Code: */-->    
-
     	<title>Jay's | Plumbing</title>
-		
 	</head>
 	<div id="fullPage" class="container">
         <div id="topHeaderDiv" class="row text-center">
             <header id="header">
                 <img class="img-responsive img_responsive img-rounded" href="index.html" src="images/3logo.png" alt="Responsive image"> 
-                
-            	<nav class="nav">
+                <nav class="nav">
                     <a href="tel:+1-502-449-0492" class="col-sm-push-2 col-md-3 emergency_button" role="button">24/7 Emergency service! <br>502-449-0492</a>
             	    <div class="nav-collapse">
-                    <!--<a class="brand" href="#">Jay's Plumbing</a>-->
                         <div class="nav-collapse">
                             <ul class="nav_bar nav col-sm-push-2 hidden-md hidden-lg">
                                 <li class="active"><a href="index.html" class="selected">Home</a></li>
@@ -71,7 +37,9 @@
                                 
                                 <ul class="dropdown-menu dropdown-menu-right drpdwn">
                                     <li class=""><a href="index.html" class="selected">Home</a></li>
-                                    <li class=""><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                    <!--/* Plumber Sighting soon to launch */-->
+                                    <li class="hide"><a href="map.html" class="drpNav sightings">Plumber Sightings</a></li>
+                        <!--/* End Plumber Sighting */-->            
                                     <li class=""><a href="about.html" class="drpNav" >About</a></li>
                                     <li class=""><a href="contact.html" class="drpNav">Contact</a></li>
                                 </ul>
@@ -85,8 +53,6 @@
         <break>
             <p class="text_logo .sr-only" alt="Jay's Plumbing">Jay's Plumbing</p>
         </break>
-        
-        
         <div class="row">
             <body id="maincontent" >
         	    <div id="bodyDiv">
@@ -294,10 +260,10 @@
     <!--/* Begin Script Tags */-->            
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         	    <script type="text/javascript" src="javascript/widget.js"></script>
-        	    <script type="text/javascript" src="javascript/form.js"></script>
-    <!--/* Parse Script Tag */-->    
-                <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--/* Parse Script Tags - POST Form Submission */-->    
+                <!--<script type="text/javascript" src="javascript/form.js"></script>-->
+                <!--<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>-->
+                <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
     
         	</body>
         	
