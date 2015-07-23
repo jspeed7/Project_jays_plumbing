@@ -1,7 +1,7 @@
 # jays_plumbing
 This is my first Project for Code Louisville and as a developer in general.
 
-I'm very new to the front end development community and highly passionate about moving forward and learning more. I didn't know a single thing about coding when I started this project! But I wanted to test the skills I've learned and challenge myself by using Jay's Plumbing current site (https://jaysplumbingky.com) and completely over-hauling it!
+I'm very new to the front end development community and highly passionate about moving forward and learning more. I didn't know a single thing about coding when I started this project! But I wanted to test the skills I've learned and challenge myself by using Jay's Plumbing current site (http://jaysplumbingky.com/) and completely over-hauling it!
 
 I designed this knowing that I might one day launch into a live enviroment. I personally know the owner and will be meeting with him soon in-order to help Jay's Plumbing create leads and grow their business. I hope to do this by reaching more people through the convince of browsing on mobile devices, making it more accessable on social media and easier to find in internet searches.
 
