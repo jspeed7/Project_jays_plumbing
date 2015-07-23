@@ -465,6 +465,11 @@ footer .copyright-logo {
     width: 100%;
 }
 
+#currentYear {
+    text-decoration: none;
+    color: #000000;
+}
+
 /************************************************************
 
 Media Query : Repsonsive Web
