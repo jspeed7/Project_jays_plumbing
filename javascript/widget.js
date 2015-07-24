@@ -18,312 +18,240 @@ $(document).ready(function(){
 		$(getCurrentYear());
 
 //============================== Customer Review ===============================//
-
-
-// Facebook Page widget plugin
-
-$(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=238957949482864";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-// snipet for customer review window
-
-// Easy Ticker plugin
 	
-(function ( $, window, document, undefined ) {
 	
-    var name = "easyTicker",
-        defaults = {
-			direction: 'down',
-			easing: 'swing',
-			speed: 'slow',
-			interval: 4000,
-			height: 'auto',
-			visible: 3,
-			mousePause: 1,
-			controls: {
-				up: '',
-				down: '',
-				toggle: '',
-				playText: 'Play',
-				stopText: 'Stop'
-			}
-        };
-
-    // Constructor
-    function EasyTicker( el, options ) {
+	// Facebook Page widget plugin
+	
+	$(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=238957949482864";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	
+	
+	// plugin for customer review window
+	
+	// Easy Ticker plugin
 		
-		var s = this;
+	(function ( $, window, document, undefined ) {
 		
-        s.opts = $.extend( {}, defaults, options );
-        s.elem = $(el);
-		s.targ = $(el).children(':first-child');
-		s.timer = 0;
-		s.mHover = 0;
-		s.winFocus = 1;
-		
-		init();
-		start();
-		
-		$([window, document]).off('focus.jqet').on('focus.jqet', function(){
-			s.winFocus = 1;
-		}).off('blur.jqet').on('blur.jqet', function(){
-			s.winFocus = 0;
-		});
-		
-		if( s.opts.mousePause == 1 ){
-			s.elem.mouseenter(function(){
-				s.timerTemp = s.timer;
-				stop();
-			}).mouseleave(function(){
-				if( s.timerTemp !== 0 )
-					start();
-			});
-		}
-		
-		$(s.opts.controls.up).on('click', function(e){
-			e.preventDefault();
-			moveDir('up');
-		});
-		
-		$(s.opts.controls.down).on('click', function(e){
-			e.preventDefault();
-			moveDir('down');
-		});
-		
-		$(s.opts.controls.toggle).on('click', function(e){
-			e.preventDefault();
-			if( s.timer == 0 ) start();
-			else stop();
-		});
-		
-		function init(){
-			
-			s.elem.children().css('margin', 0).children().css('margin', 0);
-			
-			s.elem.css({
-				position : 'relative',
-				height: s.opts.height,
-				overflow : 'hidden'
-			});
-			
-			s.targ.css({
-				'position' : 'absolute',
-				'margin' : 0
-			});
-			
-			setInterval( function(){
-				adjHeight();
-			}, 100);
-			
-		} // Init Method
-		
-		function start(){
-			s.timer = setInterval(function(){
-				if( s.winFocus == 1 ){
-					move( s.opts.direction );
+	    var name = "easyTicker",
+	        defaults = {
+				direction: 'down',
+				easing: 'swing',
+				speed: 'slow',
+				interval: 4000,
+				height: 'auto',
+				visible: 3,
+				mousePause: 1,
+				controls: {
+					up: '',
+					down: '',
+					toggle: '',
+					playText: 'Play',
+					stopText: 'Stop'
 				}
-			}, s.opts.interval);
-
-			$(s.opts.controls.toggle).addClass('et-run').html(s.opts.controls.stopText);
+	        };
+	
+	    // Constructor
+	    function EasyTicker( el, options ) {
 			
-		} // Start method
-		
-		
-		function stop(){
-			clearInterval( s.timer );
+			var s = this;
+			
+	        s.opts = $.extend( {}, defaults, options );
+	        s.elem = $(el);
+			s.targ = $(el).children(':first-child');
 			s.timer = 0;
-			$(s.opts.controls.toggle).removeClass('et-run').html(s.opts.controls.playText);
-		}// Stop
-		
-		
-		function move( dir ){
-			var sel, eq, appType;
+			s.mHover = 0;
+			s.winFocus = 1;
 			
-			if( !s.elem.is(':visible') ) return;
-
-			if( dir == 'up' ){
-				sel = ':first-child';
-				eq = '-=';
-				appType = 'appendTo';
-			}else{
-				sel = ':last-child';
-				eq = '+=';
-				appType = 'prependTo';
-			}
-		
-			var selChild = s.targ.children(sel);
-			var height = selChild.outerHeight();
+			init();
+			start();
 			
-			s.targ.stop(true, true).animate({
-				'top': eq + height + "px"
-			}, s.opts.speed, s.opts.easing, function(){
-				
-				selChild.hide()[appType]( s.targ ).fadeIn();
-				s.targ.css('top', 0);
-				
-				adjHeight();
-				
+			$([window, document]).off('focus.jqet').on('focus.jqet', function(){
+				s.winFocus = 1;
+			}).off('blur.jqet').on('blur.jqet', function(){
+				s.winFocus = 0;
 			});
-		}// Move
-		
-		function moveDir( dir ){
-			stop();
-			if( dir == 'up' ) move('up'); else move('down'); 
-			// start();
-		}
-		
-		function fullHeight(){
-			var height = 0;
-			var tempDisp = s.elem.css('display'); // Get the current el display value
 			
-			s.elem.css('display', 'block');
+			if( s.opts.mousePause == 1 ){
+				s.elem.mouseenter(function(){
+					s.timerTemp = s.timer;
+					stop();
+				}).mouseleave(function(){
+					if( s.timerTemp !== 0 )
+						start();
+				});
+			}
+			
+			$(s.opts.controls.up).on('click', function(e){
+				e.preventDefault();
+				moveDir('up');
+			});
+			
+			$(s.opts.controls.down).on('click', function(e){
+				e.preventDefault();
+				moveDir('down');
+			});
+			
+			$(s.opts.controls.toggle).on('click', function(e){
+				e.preventDefault();
+				if( s.timer == 0 ) start();
+				else stop();
+			});
+			
+			function init(){
+				
+				s.elem.children().css('margin', 0).children().css('margin', 0);
+				
+				s.elem.css({
+					position : 'relative',
+					height: s.opts.height,
+					overflow : 'hidden'
+				});
+				
+				s.targ.css({
+					'position' : 'absolute',
+					'margin' : 0
+				});
+				
+				setInterval( function(){
+					adjHeight();
+				}, 100);
+				
+			} // Init Method
+			
+			function start(){
+				s.timer = setInterval(function(){
+					if( s.winFocus == 1 ){
+						move( s.opts.direction );
+					}
+				}, s.opts.interval);
+	
+				$(s.opts.controls.toggle).addClass('et-run').html(s.opts.controls.stopText);
+				
+			} // Start method
+			
+			
+			function stop(){
+				clearInterval( s.timer );
+				s.timer = 0;
+				$(s.opts.controls.toggle).removeClass('et-run').html(s.opts.controls.playText);
+			}// Stop
+			
+			
+			function move( dir ){
+				var sel, eq, appType;
+				
+				if( !s.elem.is(':visible') ) return;
+	
+				if( dir == 'up' ){
+					sel = ':first-child';
+					eq = '-=';
+					appType = 'appendTo';
+				}else{
+					sel = ':last-child';
+					eq = '+=';
+					appType = 'prependTo';
+				}
+			
+				var selChild = s.targ.children(sel);
+				var height = selChild.outerHeight();
+				
+				s.targ.stop(true, true).animate({
+					'top': eq + height + "px"
+				}, s.opts.speed, s.opts.easing, function(){
 					
-			s.targ.children().each(function(){
-				height += $(this).outerHeight();
-			});
-		
-			s.elem.css({
-				'display' : tempDisp,
-				'height' : height
-			});
-		}
-		
-		function visHeight( anim ){
-			var wrapHeight = 0;
-			s.targ.children(':lt(' + s.opts.visible + ')').each(function(){
-				wrapHeight += $(this).outerHeight();
-			});
+					selChild.hide()[appType]( s.targ ).fadeIn();
+					s.targ.css('top', 0);
+					
+					adjHeight();
+					
+				});
+			}// Move
 			
-			if( anim == 1 ){
-				s.elem.stop(true, true).animate({height: wrapHeight}, s.opts.speed);
-			}else{
-				s.elem.css( 'height', wrapHeight);
+			function moveDir( dir ){
+				stop();
+				if( dir == 'up' ) move('up'); else move('down'); 
+				// start();
 			}
-		}
-		
-		function adjHeight(){
-			if( s.opts.height == 'auto' && s.opts.visible != 0 ){
-				anim = arguments.callee.caller.name == 'init' ? 0 : 1;
-				visHeight( anim );
-			}else if( s.opts.height == 'auto' ){
-				fullHeight();
+			
+			function fullHeight(){
+				var height = 0;
+				var tempDisp = s.elem.css('display'); // Get the current el display value
+				
+				s.elem.css('display', 'block');
+						
+				s.targ.children().each(function(){
+					height += $(this).outerHeight();
+				});
+			
+				s.elem.css({
+					'display' : tempDisp,
+					'height' : height
+				});
 			}
+			
+			function visHeight( anim ){
+				var wrapHeight = 0;
+				s.targ.children(':lt(' + s.opts.visible + ')').each(function(){
+					wrapHeight += $(this).outerHeight();
+				});
+				
+				if( anim == 1 ){
+					s.elem.stop(true, true).animate({height: wrapHeight}, s.opts.speed);
+				}else{
+					s.elem.css( 'height', wrapHeight);
+				}
+			}
+			
+			function adjHeight(){
+				if( s.opts.height == 'auto' && s.opts.visible != 0 ){
+					anim = arguments.callee.caller.name == 'init' ? 0 : 1;
+					visHeight( anim );
+				}else if( s.opts.height == 'auto' ){
+					fullHeight();
+				}
+			}
+			
+			return {
+				up: function(){ moveDir('up'); },
+				down: function(){ moveDir('down'); },
+				start: start,
+				stop: stop,
+				options: s.opts
+			};
+			
+	    }
+	
+	    // Attach the object to the DOM
+	    $.fn[name] = function ( options ) {
+	        return this.each(function () {
+	            if (!$.data(this, name)) {
+	                $.data(this, name, new EasyTicker( this, options ));
+	            }
+	        });
+	    };
+	
+	})( jQuery, window, document );
+	
+	$('.ticker1, .ticker2').easyTicker({
+		direction: 'down',
+		easing: 'swing',
+		speed: 'slow',
+		interval: 4000,
+		height: 'auto',
+		visible: 3,
+		mousePause: 1,
+		controls: {
+			up: '',
+			down: '',
+			toggle: '',
+			playText: 'Play',
+			stopText: 'Stop'
 		}
-		
-		return {
-			up: function(){ moveDir('up'); },
-			down: function(){ moveDir('down'); },
-			start: start,
-			stop: stop,
-			options: s.opts
-		};
-		
-    }
-
-    // Attach the object to the DOM
-    $.fn[name] = function ( options ) {
-        return this.each(function () {
-            if (!$.data(this, name)) {
-                $.data(this, name, new EasyTicker( this, options ));
-            }
-        });
-    };
-
-})( jQuery, window, document );
-
-$('.ticker1, .ticker2').easyTicker({
-	direction: 'down',
-	easing: 'swing',
-	speed: 'slow',
-	interval: 4000,
-	height: 'auto',
-	visible: 3,
-	mousePause: 1,
-	controls: {
-		up: '',
-		down: '',
-		toggle: '',
-		playText: 'Play',
-		stopText: 'Stop'
-	}
-});
-
-//================================  User Ratings ===============================// 
-//=========================== Jquery, Ajax & Parse.com =========================//
-
-$('.ratings_stars').hover(
-    
-    // Handles the mouseover
-    function() {
-        $(this).prevAll().andSelf().addClass('ratings_over');
-        $(this).nextAll().removeClass('ratings_vote'); 
-    },
-    
-    // Handles the mouseout
-    function() {
-        $(this).prevAll().andSelf().removeClass('ratings_over');
-        set_votes($(this).parent());
-    }
-);
-
-$('.rate_widget').each(function(i) {
-    var widget = this;
-    var out_data = {
-        widget_id : $(widget).attr('id'),
-        fetch: 1
-    };
-    $.post(
-        'ratings.js',
-        out_data,
-        function(INFO) {
-            $(widget).data( 'fsr', INFO );
-            set_votes(widget);
-        },
-        'json'
-    );
-});
-
-
-
-
-function set_votes(widget) {
- 
-    var avg = $(widget).data('fsr').whole_avg;
-    var votes = $(widget).data('fsr').number_votes;
-    var exact = $(widget).data('fsr').dec_avg;
-     
-    $(widget).find('.star_' + avg).prevAll().andSelf().addClass('ratings_vote');
-    $(widget).find('.star_' + avg).nextAll().removeClass('ratings_vote'); 
-    $(widget).find('.total_votes').text( votes + ' votes recorded (' + exact + ' rating)' );
-}
-
-// click handler
-
-$('.ratings_stars').bind('click', function() {
-    var star = this;
-    var widget = $(this).parent();
-     
-    var clicked_data = {
-        clicked_on : $(star).attr('class'),
-        widget_id : widget.attr('id')
-    };
-    $.post(
-        'ratings.php',
-        clicked_data,
-        function(INFO) {
-            widget.data( 'fsr', INFO );
-            set_votes(widget);
-        },
-        'json'
-    ); 
-});
-
-
+	});
 
 });
