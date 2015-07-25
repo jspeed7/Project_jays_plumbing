@@ -266,8 +266,6 @@ body {
     max-width: 300px;
 }
 
-
-    
 .text_logo {
     display: none;
 }
@@ -595,6 +593,10 @@ Media Query : Repsonsive Web
         .nav .emergency_button {
             display: inline-block;
             padding: 5px 5px;
+            margin: 0;
+        }
+        
+        .alert {
             margin: 0;
         }
         
