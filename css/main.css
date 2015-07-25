@@ -258,6 +258,11 @@ body {
     padding-left: 0;
 }
 
+#qrCode img {
+    padding-top: 30px;
+    max-width: 300px;
+}
+
 /************************************************************
 
 Map: 
@@ -547,7 +552,7 @@ Media Query : Repsonsive Web
     
                 
         .jpContactInfo {
-            padding: 30px;
+            padding: 0 30px 0 30px;
             text-align: center;
         }
         
