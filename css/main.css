@@ -489,6 +489,10 @@ footer .copyright-logo {
     color: #000000;
 }
 
+#copyRights {
+    font-size: 10px;
+}
+
 /************************************************************
 
 Media Query : Repsonsive Web
