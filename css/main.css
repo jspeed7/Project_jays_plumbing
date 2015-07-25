@@ -54,6 +54,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
 }
 
 .img-wrap {
@@ -265,11 +266,7 @@ body {
     max-width: 300px;
 }
 
-    
-.img_responsive {
-    height: auto;
-    width: auto;
-}    
+
     
 .text_logo {
     display: none;
