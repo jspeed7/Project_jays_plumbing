@@ -556,12 +556,12 @@ Media Query : Repsonsive Web
 
         /* Extra Small Devices, Phones */ 
     @media only screen and (min-width: 651px) and (max-width: 991px) {
-         .row {
+        .row {
             padding: 0;
             margin: 0;
         }
  
-         #header img {
+        #header img {
             float: left;
         }
     
@@ -572,8 +572,6 @@ Media Query : Repsonsive Web
         }
         
         ul .nav_bar {
-            /*float: right;*/
-            /*clear: right;*/
             padding: inherit;
             margin: 0;
     	    background: #FFFFFF;
