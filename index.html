@@ -21,7 +21,7 @@
         <div id="topHeaderDiv" class="row text-center">
             <header id="header">
                 <a href="index.html"><img class="img_responsive" src="images/3logo.png" alt="Responsive image"></a> 
-                <nav class="nav">
+                <nav class="nav row">
                     <a href="tel:+1-502-449-0492" class="col-sm-push-2 col-md-3 emergency_button" role="button">24/7 Emergency service! <br>502-449-0492</a>
             	    <div class="nav-collapse">
                         <div class="nav-collapse">
@@ -82,7 +82,7 @@
                       <ul class="list-unstyled">
                         <li class=""><a class="" data-placement="bottom" data-toggle="popover" data-title="Service Request:" data-container="body" type="button" data-html="true" href="#" id="SRF">Service Request Form <span class="SRF_arrow glyphicon glyphicon-triangle-bottom"></span></a></li>
                         <div id="popover-content" class="hide">
-                          <form id="form" action="" class="form">        
+                          <form id="form" method="POST" action="http://httpbin.org/post" class="form">        
         <!--/* Section 1 of Form */-->
                             <fieldset class="form-group">
                                 <legend class="text-center"><span class="number">1.</span> Contact Information
