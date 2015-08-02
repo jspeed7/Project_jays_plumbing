@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-	// snipet for popout SRF
+//============================== Popout SRF ===============================//
+	
 	$("[data-toggle=popover]").popover({
 	    html: true, 
 		content: function() {
@@ -9,15 +10,7 @@ $(document).ready(function(){
 	});
 
 
-		function getCurrentYear() {
-		    var d = new Date();
-		    var n = d.getFullYear();
-		    document.getElementById("currentYear").innerHTML = n;
-		}
-
-		$(getCurrentYear());
-
-//============================== Customer Review ===============================//
+//============================== Facebook Widget ===============================//
 	
 	
 	// Facebook Page widget plugin
@@ -31,11 +24,10 @@ $(document).ready(function(){
 	}(document, 'script', 'facebook-jssdk'));
 	
 	
-	// plugin for customer review window
+//========================++ Customer Review Easy Ticker =======================//
 	
-	// Easy Ticker plugin
-		
-	(function ( $, window, document, undefined ) {
+
+	(function ( $, window, document ) {
 		
 	    var name = "easyTicker",
 	        defaults = {
@@ -121,7 +113,9 @@ $(document).ready(function(){
 					adjHeight();
 				}, 100);
 				
-			} // Init Method
+			} 
+			
+			// Init Method
 			
 			function start(){
 				s.timer = setInterval(function(){
@@ -132,14 +126,18 @@ $(document).ready(function(){
 	
 				$(s.opts.controls.toggle).addClass('et-run').html(s.opts.controls.stopText);
 				
-			} // Start method
+			} 
+			
+			// Start method
 			
 			
 			function stop(){
 				clearInterval( s.timer );
 				s.timer = 0;
 				$(s.opts.controls.toggle).removeClass('et-run').html(s.opts.controls.playText);
-			}// Stop
+			}
+			
+			// Stop
 			
 			
 			function move( dir ){
@@ -170,7 +168,9 @@ $(document).ready(function(){
 					adjHeight();
 					
 				});
-			}// Move
+			}
+			
+			// Move
 			
 			function moveDir( dir ){
 				stop();
@@ -209,7 +209,7 @@ $(document).ready(function(){
 			
 			function adjHeight(){
 				if( s.opts.height == 'auto' && s.opts.visible != 0 ){
-					anim = arguments.callee.caller.name == 'init' ? 0 : 1;
+					var anim = arguments.callee.caller.name == 'init' ? 0 : 1;
 					visHeight( anim );
 				}else if( s.opts.height == 'auto' ){
 					fullHeight();
@@ -235,23 +235,34 @@ $(document).ready(function(){
 	        });
 	    };
 	
-	})( jQuery, window, document );
+		})( jQuery, window, document );
+		
+		$('.ticker1, .ticker2').easyTicker({
+			direction: 'down',
+			easing: 'swing',
+			speed: 'slow',
+			interval: 4000,
+			height: 'auto',
+			visible: 3,
+			mousePause: 1,
+			controls: {
+				up: '',
+				down: '',
+				toggle: '',
+				playText: 'Play',
+				stopText: 'Stop'
+			}
+		});
 	
-	$('.ticker1, .ticker2').easyTicker({
-		direction: 'down',
-		easing: 'swing',
-		speed: 'slow',
-		interval: 4000,
-		height: 'auto',
-		visible: 3,
-		mousePause: 1,
-		controls: {
-			up: '',
-			down: '',
-			toggle: '',
-			playText: 'Play',
-			stopText: 'Stop'
-		}
 	});
 
-});
+
+//============================== Copy Right ===============================//
+		
+		function getCurrentYear() {
+		    var d = new Date();
+		    var n = d.getFullYear();
+		    document.getElementById("currentYear").innerHTML = n;
+		}
+
+		$(getCurrentYear());
